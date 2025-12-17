@@ -28,16 +28,16 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@removeitservices.com",
-    href: "mailto:info@removeitservices.com",
+    value: "aweaver@removeitservices.com",
+    href: "mailto:aweaver@removeitservices.com",
     description: "We respond within 2 hours",
   },
   {
     icon: MapPin,
     title: "Service Area",
-    value: "Statewide Coverage",
+    value: "4 Service Areas",
     href: "/service-areas",
-    description: "50+ cities served",
+    description: "PA, DE & MD",
   },
   {
     icon: Clock,

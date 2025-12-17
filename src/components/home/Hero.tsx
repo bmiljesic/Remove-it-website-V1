@@ -41,7 +41,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-8"
           >
             <Sparkles className="w-4 h-4" />
-            Trusted by Commercial Clients Statewide
+            Trusted by Commercial Clients Across PA & MD
           </motion.div>
 
           {/* Main Headline */}

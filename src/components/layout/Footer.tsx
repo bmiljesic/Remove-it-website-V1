@@ -158,16 +158,16 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@removeitservices.com"
+                  href="mailto:aweaver@removeitservices.com"
                   className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors duration-200"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
-                  info@removeitservices.com
+                  aweaver@removeitservices.com
                 </a>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>Serving Businesses Statewide</span>
+                <span>Delaware County PA, Delaware, Cecil & Harford County MD</span>
               </li>
             </ul>
           </div>

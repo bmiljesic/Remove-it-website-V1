@@ -4,20 +4,24 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ani
 
 const regions = [
   {
-    name: "Metro Area",
-    cities: ["Downtown", "Midtown", "Uptown", "Eastside", "Westside"],
+    state: "Pennsylvania",
+    name: "Delaware County",
+    cities: ["Media", "Chester", "Upper Darby", "Radnor", "Springfield"],
   },
   {
-    name: "Northern Region",
-    cities: ["Northville", "Lakeside", "Highland", "Forest Park", "Summit"],
+    state: "Delaware",
+    name: "The State",
+    cities: ["Wilmington", "Newark", "Dover", "Middletown", "Smyrna"],
   },
   {
-    name: "Southern Region",
-    cities: ["Southgate", "Riverside", "Bayview", "Harbor City", "Coastal"],
+    state: "Maryland",
+    name: "Cecil County",
+    cities: ["Elkton", "North East", "Perryville", "Chesapeake City", "Rising Sun"],
   },
   {
-    name: "Eastern Region",
-    cities: ["Eastpoint", "Valley View", "Greenfield", "Oakwood", "Hillside"],
+    state: "Maryland",
+    name: "Harford County",
+    cities: ["Bel Air", "Aberdeen", "Havre de Grace", "Edgewood", "Fallston"],
   },
 ];
 
@@ -25,80 +29,38 @@ export function ServiceAreasPreview() {
   return (
     <section className="py-24 bg-muted/50">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Map Visualization */}
-          <ScrollReveal direction="left">
-            <div className="relative aspect-square max-w-lg mx-auto">
-              {/* Stylized Map Background */}
-              <div className="absolute inset-0 rounded-3xl bg-card border border-border shadow-card overflow-hidden">
-                <div 
-                  className="absolute inset-0 opacity-5"
-                  style={{
-                    backgroundImage: `radial-gradient(circle at 2px 2px, hsl(var(--foreground)) 1px, transparent 0)`,
-                    backgroundSize: "20px 20px",
-                  }}
-                />
-                
-                {/* Animated Dots representing coverage */}
-                {[...Array(12)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-3 h-3 rounded-full bg-accent animate-pulse"
-                    style={{
-                      top: `${20 + Math.random() * 60}%`,
-                      left: `${20 + Math.random() * 60}%`,
-                      animationDelay: `${i * 0.2}s`,
-                    }}
-                  />
-                ))}
-                
-                {/* Central Hub */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center animate-pulse">
-                    <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Statewide Badge */}
-              <div className="absolute -bottom-4 -right-4 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-bold shadow-lg">
-                Statewide Coverage
-              </div>
-            </div>
-          </ScrollReveal>
-
+        <div className="max-w-5xl mx-auto">
           {/* Content */}
-          <div>
-            <ScrollReveal direction="right">
+          <div className="text-center">
+            <ScrollReveal>
               <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
                 Service Areas
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Serving Businesses Across the State
+                Serving Businesses Across the Region
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                From metropolitan centers to regional commercial hubs, we provide reliable 
-                junk removal services wherever your business operates.
+              <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+                We provide reliable junk removal services across Delaware County Pennsylvania, 
+                Delaware (the state), Cecil County Maryland, and Harford County Maryland.
               </p>
             </ScrollReveal>
 
-            <StaggerContainer className="grid grid-cols-2 gap-6 mb-8" staggerDelay={0.1}>
-              {regions.map((region) => (
-                <StaggerItem key={region.name}>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-accent" />
+            <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10" staggerDelay={0.1}>
+              {regions.map((region, index) => (
+                <StaggerItem key={`${region.state}-${region.name}-${index}`}>
+                  <div className="text-center md:text-left">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground mb-1 flex items-center justify-center md:justify-start gap-2">
+                      <MapPin className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0" />
                       {region.name}
                     </h3>
+                    <p className="text-xs md:text-sm text-muted-foreground mb-2.5">{region.state}</p>
                     <ul className="space-y-1">
                       {region.cities.slice(0, 3).map((city) => (
-                        <li key={city} className="text-sm text-muted-foreground">
+                        <li key={city} className="text-sm md:text-base text-muted-foreground leading-relaxed">
                           {city}
                         </li>
                       ))}
-                      <li className="text-sm text-accent font-medium">
+                      <li className="text-sm md:text-base text-accent font-medium mt-1">
                         +{region.cities.length - 3} more
                       </li>
                     </ul>

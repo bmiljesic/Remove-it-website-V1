@@ -7,81 +7,59 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ani
 
 const regions = [
   {
-    name: "Metro Area",
+    state: "Pennsylvania",
+    name: "Delaware County",
     cities: [
-      "Downtown Business District",
-      "Midtown",
-      "Uptown",
-      "Eastside Industrial",
-      "Westside Commerce",
-      "North Point",
-      "South Bay",
-      "Central Plaza",
-    ],
-  },
-  {
-    name: "Northern Region",
-    cities: [
-      "Northville",
-      "Lakeside",
-      "Highland Park",
-      "Forest Hills",
-      "Summit Point",
-      "Mountain View",
-      "Valley Heights",
-      "Pine Ridge",
-    ],
-  },
-  {
-    name: "Southern Region",
-    cities: [
-      "Southgate",
-      "Riverside",
-      "Bayview",
-      "Harbor City",
-      "Coastal Heights",
-      "Ocean Park",
-      "Palm Springs",
-      "Sunset Valley",
-    ],
-  },
-  {
-    name: "Eastern Region",
-    cities: [
-      "Eastpoint",
-      "Valley View",
-      "Greenfield",
-      "Oakwood",
-      "Hillside",
-      "Meadowbrook",
+      "Media",
+      "Chester",
+      "Upper Darby",
+      "Radnor",
+      "Marple",
       "Springfield",
-      "Clearwater",
+      "Haverford",
+      "Ridley",
     ],
   },
   {
-    name: "Western Region",
+    state: "Delaware",
+    name: "The State",
     cities: [
-      "Westpoint",
-      "Desert Springs",
-      "Mesa Heights",
-      "Canyon View",
-      "Red Rock",
-      "Silver Lake",
-      "Golden Valley",
-      "Sunset Hills",
+      "Wilmington",
+      "Newark",
+      "Dover",
+      "Middletown",
+      "Smyrna",
+      "Milford",
+      "Seaford",
+      "Georgetown",
     ],
   },
   {
-    name: "Central Region",
+    state: "Maryland",
+    name: "Cecil County",
     cities: [
-      "Central City",
-      "Crossroads",
-      "Union Square",
-      "Heritage Park",
-      "Commerce Center",
-      "Gateway",
-      "Parkview",
-      "Fountain Hills",
+      "Elkton",
+      "North East",
+      "Perryville",
+      "Chesapeake City",
+      "Rising Sun",
+      "Port Deposit",
+      "Conowingo",
+      "Cecilton",
+    ],
+  },
+  {
+    state: "Maryland",
+    name: "Harford County",
+    cities: [
+      "Bel Air",
+      "Aberdeen",
+      "Havre de Grace",
+      "Edgewood",
+      "Joppatowne",
+      "Fallston",
+      "Jarrettsville",
+      "Darlington",
     ],
   },
 ];
@@ -100,11 +78,11 @@ export default function ServiceAreas() {
                   Service Areas
                 </span>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                  Statewide Commercial Junk Removal
+                  Commercial Junk Removal Services
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
-                  From major metropolitan areas to regional business centers, we provide 
-                  reliable junk removal services wherever your business operates.
+                  Serving Delaware County Pennsylvania, Delaware (the state), Cecil County Maryland, 
+                  and Harford County Maryland with reliable junk removal services for your business.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="cta" size="lg" asChild>
@@ -128,20 +106,20 @@ export default function ServiceAreas() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <ScrollReveal delay={0}>
                 <div>
-                  <div className="text-4xl font-bold mb-2">50+</div>
-                  <div className="text-primary-foreground/70">Cities Served</div>
+                  <div className="text-4xl font-bold mb-2">4</div>
+                  <div className="text-primary-foreground/70">Service Areas</div>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
                 <div>
-                  <div className="text-4xl font-bold mb-2">6</div>
-                  <div className="text-primary-foreground/70">Regional Hubs</div>
+                  <div className="text-4xl font-bold mb-2">30+</div>
+                  <div className="text-primary-foreground/70">Cities & Towns</div>
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <div>
-                  <div className="text-4xl font-bold mb-2">100%</div>
-                  <div className="text-primary-foreground/70">Statewide Coverage</div>
+                  <div className="text-4xl font-bold mb-2">2</div>
+                  <div className="text-primary-foreground/70">States Covered</div>
                 </div>
               </ScrollReveal>
             </div>
@@ -157,8 +135,8 @@ export default function ServiceAreas() {
                   Our Coverage Areas
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  We've strategically positioned our teams to provide fast, reliable service 
-                  across the entire state. Find your area below.
+                  We provide fast, reliable service across Delaware County Pennsylvania, 
+                  Delaware (the state), Cecil County Maryland, and Harford County Maryland. Find your area below.
                 </p>
               </div>
             </ScrollReveal>
@@ -167,16 +145,19 @@ export default function ServiceAreas() {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               staggerDelay={0.1}
             >
-              {regions.map((region) => (
-                <StaggerItem key={region.name}>
+              {regions.map((region, index) => (
+                <StaggerItem key={`${region.state}-${region.name}-${index}`}>
                   <div className="p-6 rounded-2xl bg-card border border-border shadow-card hover:shadow-card-hover transition-all duration-300">
-                    <div className="flex items-center gap-3 mb-4">
+                    <div className="flex items-center gap-3 mb-2">
                       <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
                         <MapPin className="w-5 h-5 text-accent" />
                       </div>
-                      <h3 className="text-xl font-bold text-foreground">{region.name}</h3>
+                      <div>
+                        <h3 className="text-xl font-bold text-foreground">{region.name}</h3>
+                        <p className="text-sm text-muted-foreground">{region.state}</p>
+                      </div>
                     </div>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mt-4">
                       {region.cities.map((city) => (
                         <li key={city} className="flex items-center gap-2 text-muted-foreground">
                           <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />

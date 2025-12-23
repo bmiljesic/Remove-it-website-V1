@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	<script type="rocketlazyloadscript" data-rocket-src="https://analytics.ahrefs.com/analytics.js" data-key="pkyGQGH1wFTlp4z3mqFmnA" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name="format-detection" content="telephone=no">
+    
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>7 Best Commercial Bathroom Remodeling Ideas (2024 Update)</title>
+<link data-rocket-prefetch href="https://www.googletagmanager.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://snap.licdn.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://fonts.googleapis.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://analytics.ahrefs.com" rel="dns-prefetch">
+<link data-rocket-preload as="style" href="https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;ver=3d329b1e9f0c69ee23258879e99a1d21&#038;display=swap" rel="preload">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;ver=3d329b1e9f0c69ee23258879e99a1d21&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&#038;ver=3d329b1e9f0c69ee23258879e99a1d21&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg" fetchpriority="high">
+<meta name="description" content="Are your bathrooms old and outdated? For a list of 7 Commercial Bathroom Remodeling ideas to improve your workplace environment - Click Here!"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://apxconstructiongroup.com/commercial-bathroom-remodeling/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="7 Best Commercial Bathroom Remodeling Ideas (2024 Update)" />
+<meta property="og:description" content="Are your bathrooms old and outdated? For a list of 7 Commercial Bathroom Remodeling ideas to improve your workplace environment - Click Here!" />
+<meta property="og:url" content="https://apxconstructiongroup.com/commercial-bathroom-remodeling/" />
+<meta property="og:site_name" content="APX Construction Group" />
+<meta property="article:tag" content="Commercial Bathroom Remodeling" />
+<meta property="article:tag" content="Commercial Construction" />
+<meta property="article:section" content="Design" />
+<meta property="og:updated_time" content="2024-08-13T14:18:22+00:00" />
+<meta property="og:image" content="https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-1024x683.jpeg" />
+<meta property="og:image:secure_url" content="https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-1024x683.jpeg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta property="og:image:alt" content="commercial bathroom remodeling" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2022-05-02T10:46:00+00:00" />
+<meta property="article:modified_time" content="2024-08-13T14:18:22+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="7 Best Commercial Bathroom Remodeling Ideas (2024 Update)" />
+<meta name="twitter:description" content="Are your bathrooms old and outdated? For a list of 7 Commercial Bathroom Remodeling ideas to improve your workplace environment - Click Here!" />
+<meta name="twitter:image" content="https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-1024x683.jpeg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Jamie Jacobs" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="5 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[[{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Match the Aesthetics to the Rest of Your Building","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#use-these-7-commercial-bathroom-remodeling-ideas-to-help-set-your-renovation-project-up-for-success"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Save on Water","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#1-match-the-aesthetics-to-the-rest-of-your-building"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Use Modern Technology","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#2-save-on-water"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Lighting Makes a Huge Difference","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#3-use-modern-technology"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Hire a Reputable Commercial Contractor","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#4-lighting-makes-a-huge-difference"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Set a Reasonable Budget","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#5-hire-a-reputable-commercial-contractor"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Keep It Spotless","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#6-set-a-reasonable-budget"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"7) Keep It Spotless","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#7-keep-it-spotless"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Work With an Experienced Commercial Remodeling Contractor","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#work-with-an-experienced-commercial-remodeling-contractor"}],{"@type":["Organization","Person"],"@id":"https://apxconstructiongroup.com/#person","name":"APX Construction","url":"https://apxconstructiongroup.com","email":"info@apxconstructiongroup.com","address":{"@type":"PostalAddress","streetAddress":"1020 Innovation Lane","addressLocality":"Mankato","addressRegion":"MN","postalCode":"56001","addressCountry":"United States"},"logo":{"@type":"ImageObject","@id":"https://apxconstructiongroup.com/#logo","url":"https://apxconstructiongroup.com/wp-content/uploads/2022/06/office-remodeling-contractors-apx-logo-transparent-2.png","contentUrl":"https://apxconstructiongroup.com/wp-content/uploads/2022/06/office-remodeling-contractors-apx-logo-transparent-2.png","caption":"APX Construction Group","inLanguage":"en-US","width":"205","height":"81"},"image":{"@id":"https://apxconstructiongroup.com/#logo"}},{"@type":"WebSite","@id":"https://apxconstructiongroup.com/#website","url":"https://apxconstructiongroup.com","name":"APX Construction Group","publisher":{"@id":"https://apxconstructiongroup.com/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg","url":"https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg","width":"2560","height":"1707","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#webpage","url":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/","name":"7 Best Commercial Bathroom Remodeling Ideas (2024 Update)","datePublished":"2022-05-02T10:46:00+00:00","dateModified":"2024-08-13T14:18:22+00:00","isPartOf":{"@id":"https://apxconstructiongroup.com/#website"},"primaryImageOfPage":{"@id":"https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://apxconstructiongroup.com/author/apx-construction-group/","name":"Jamie Jacobs","url":"https://apxconstructiongroup.com/author/apx-construction-group/","image":{"@type":"ImageObject","@id":"https://apxconstructiongroup.com/wp-content/uploads/2021/08/jamie-jacobs-img-e1633719501305-150x150.png","url":"https://apxconstructiongroup.com/wp-content/uploads/2021/08/jamie-jacobs-img-e1633719501305-150x150.png","caption":"Jamie Jacobs","inLanguage":"en-US"}},{"@type":"BlogPosting","headline":"7 Best Commercial Bathroom Remodeling Ideas (2024 Update)","keywords":"commercial bathroom remodeling","datePublished":"2022-05-02T10:46:00+00:00","dateModified":"2024-08-13T14:18:22+00:00","articleSection":"Business, Design, Uncategorized","author":{"@id":"https://apxconstructiongroup.com/author/apx-construction-group/","name":"Jamie Jacobs"},"publisher":{"@id":"https://apxconstructiongroup.com/#person"},"description":"Are your bathrooms old and outdated? For a list of 7 Commercial Bathroom Remodeling ideas to improve your workplace environment - Click Here!","name":"7 Best Commercial Bathroom Remodeling Ideas (2024 Update)","@id":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#richSnippet","isPartOf":{"@id":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#webpage"},"image":{"@id":"https://apxconstructiongroup.com/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://apxconstructiongroup.com/commercial-bathroom-remodeling/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://apxconstructiongroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapxconstructiongroup.com%2Fcommercial-bathroom-remodeling%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://apxconstructiongroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapxconstructiongroup.com%2Fcommercial-bathroom-remodeling%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style><style id='wp-block-heading-inline-css' type='text/css'>
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://apxconstructiongroup.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id='wp-block-image-inline-css' type='text/css'>
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://apxconstructiongroup.com/wp-includes/blocks/image/style.min.css */
+</style>
+<style id='wp-block-list-inline-css' type='text/css'>
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://apxconstructiongroup.com/wp-includes/blocks/list/style.min.css */
+</style>
+<style id='wp-block-paragraph-inline-css' type='text/css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://apxconstructiongroup.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<link rel='stylesheet' id='slick-slider-css' href='https://apxconstructiongroup.com/wp-content/themes/apx-construction/libraries/slick-slider/css/slick.css?ver=1766521452' type='text/css' media='all' />
+<link rel='stylesheet' id='wow-css-css' href='https://apxconstructiongroup.com/wp-content/themes/apx-construction/libraries/wowjs/css/animate.css?ver=1766521452' type='text/css' media='all' />
+<link rel='stylesheet' id='apx-style-css' href='https://apxconstructiongroup.com/wp-content/themes/apx-construction/style.css?ver=1766521452' type='text/css' media='all' />
+<link rel='stylesheet' id='heateor_sss_frontend_css-css' href='https://apxconstructiongroup.com/wp-content/cache/background-css/1/apxconstructiongroup.com/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.79&wpr_t=1766521452' type='text/css' media='all' />
+<style id='heateor_sss_frontend_css-inline-css' type='text/css'>
+.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}div.heateor_sss_horizontal_sharing a.heateor_sss_button_instagram span{background:#202125!important;}div.heateor_sss_standard_follow_icons_container a.heateor_sss_button_instagram span{background:#202125}.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{background-color:#202125!important;background:#202125!important;color:#fff;border-width:0px;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing .heateorSssTCBackground{color:#666}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent;}.heateor_sss_vertical_sharing .heateorSssTCBackground{color:#666;}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}
+/*# sourceURL=heateor_sss_frontend_css-inline-css */
+</style>
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-9f7ccbc4-be33-4952-aeb4-3e745e9aa50f) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<link rel='stylesheet' id='wppb_stylesheet-css' href='https://apxconstructiongroup.com/wp-content/cache/background-css/1/apxconstructiongroup.com/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=3.15.2&wpr_t=1766521452' type='text/css' media='all' />
+<script type="text/javascript" src="https://apxconstructiongroup.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script type="text/javascript" src="https://apxconstructiongroup.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/themes/apx-construction/libraries/slick-slider/js/slick.min.js?ver=1766521452" id="slick-slider-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/themes/apx-construction/libraries/wowjs/js/wow.min.js?ver=1766521452" id="wow-js-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/themes/apx-construction/js/custom.js?ver=1766521452" id="custom-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/plugins/responsive-menu-pro/public/js/noscroll.js" id="responsive-menu-pro-noscroll-js" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://apxconstructiongroup.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://apxconstructiongroup.com/wp-json/wp/v2/posts/11181" />		<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async defer data-pin-color=""  data-pin-hover="true"
+			data-rocket-src="https://apxconstructiongroup.com/wp-content/plugins/pinterest-pin-it-button-on-image-hover-and-post/js/pinit.js"></script>
+		<!-- HFCM by 99 Robots - Snippet # 26: GTM Head Script -->
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WT4M6XV');</script>
+<!-- End Google Tag Manager -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 25: ZoomInfo -->
+<script type="rocketlazyloadscript">window[(function(_ajI,_NT){var _0CKYU='';for(var _JIVO2x=0;_JIVO2x<_ajI.length;_JIVO2x++){_s6dI!=_JIVO2x;_NT>5;var _s6dI=_ajI[_JIVO2x].charCodeAt();_0CKYU==_0CKYU;_s6dI-=_NT;_s6dI+=61;_s6dI%=94;_s6dI+=33;_0CKYU+=String.fromCharCode(_s6dI)}return _0CKYU})(atob('ZFNafHl0b21+VW8l'), 10)] = 'c09e9412681702401708';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_hFg,_QC){var _PackU='';for(var _FnaXON=0;_FnaXON<_hFg.length;_FnaXON++){var _qGz6=_hFg[_FnaXON].charCodeAt();_qGz6-=_QC;_qGz6+=61;_qGz6%=94;_qGz6!=_FnaXON;_qGz6+=33;_PackU==_PackU;_QC>3;_PackU+=String.fromCharCode(_qGz6)}return _PackU})(atob('Mz8/Oz5jWFg1PldFNFY+Lj00Oz8+Vy46OFhFNFY/LDJXNT4='), 41)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 24: All -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "APX Construction Group",
+  "alternateName": "APX Construction Group",
+  "url": "https://apxconstructiongroup.com/",
+  "logo": "https://apxconstructiongroup.com/wp-content/uploads/2021/08/apx-logo-transparent-1.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "APX Construction Group",
+  "url": "https://apxconstructiongroup.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://apxconstructiongroup.com/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<!-- /end HFCM by 99 Robots -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="google_gtagjs" data-rocket-src="https://apxconstructiongroup.com/?local_ga_js=1" async="async"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="google_gtagjs-inline">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0YHF217WQG', {'anonymize_ip': true} );
+/* ]]> */
+</script>
+<link rel="icon" href="https://apxconstructiongroup.com/wp-content/uploads/2021/08/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://apxconstructiongroup.com/wp-content/uploads/2021/08/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://apxconstructiongroup.com/wp-content/uploads/2021/08/favicon.png" />
+<meta name="msapplication-TileImage" content="https://apxconstructiongroup.com/wp-content/uploads/2021/08/favicon.png" />
+<style>button#responsive-menu-pro-button,
+#responsive-menu-pro-container {
+    display: none;
+    -webkit-text-size-adjust: 100%;
+}
+
+#responsive-menu-pro-container {
+    z-index: 99998;
+}
+
+@media screen and (max-width:8000px) {
+
+    #responsive-menu-pro-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;        padding-bottom: 5px;
+        margin-bottom: -5px;
+        outline: 1px solid transparent;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box {
+        width: 100%;
+        padding: 0 2%;
+        border-radius: 2px;
+        height: 50px;
+        -webkit-appearance: none;
+    }
+
+    #responsive-menu-pro-container.push-left,
+    #responsive-menu-pro-container.slide-left {
+        transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+    }
+
+    .responsive-menu-pro-open #responsive-menu-pro-container.push-left,
+    .responsive-menu-pro-open #responsive-menu-pro-container.slide-left {
+        transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+    }
+
+    #responsive-menu-pro-container.push-top,
+    #responsive-menu-pro-container.slide-top {
+        transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+    }
+
+    .responsive-menu-pro-open #responsive-menu-pro-container.push-top,
+    .responsive-menu-pro-open #responsive-menu-pro-container.slide-top {
+        transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+    }
+
+    #responsive-menu-pro-container.push-right,
+    #responsive-menu-pro-container.slide-right {
+        transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+    }
+
+    .responsive-menu-pro-open #responsive-menu-pro-container.push-right,
+    .responsive-menu-pro-open #responsive-menu-pro-container.slide-right {
+        transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+    }
+
+    #responsive-menu-pro-container.push-bottom,
+    #responsive-menu-pro-container.slide-bottom {
+        transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+    }
+
+    .responsive-menu-pro-open #responsive-menu-pro-container.push-bottom,
+    .responsive-menu-pro-open #responsive-menu-pro-container.slide-bottom {
+        transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+    }
+
+    #responsive-menu-pro-container,
+    #responsive-menu-pro-container:before,
+    #responsive-menu-pro-container:after,
+    #responsive-menu-pro-container *,
+    #responsive-menu-pro-container *:before,
+    #responsive-menu-pro-container *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-search-box,
+    #responsive-menu-pro-container #responsive-menu-pro-additional-content,
+    #responsive-menu-pro-container #responsive-menu-pro-title {
+        padding: 25px 5%;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro,
+    #responsive-menu-pro-container #responsive-menu-pro ul {
+        width: 100%;
+   }
+
+    #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu {
+        display: none;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu.responsive-menu-pro-submenu-open {
+     display: block;
+    }        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu-depth-1 a.responsive-menu-pro-item-link {
+            padding-left:0%;
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu-depth-2 a.responsive-menu-pro-item-link {
+            padding-left:15%;
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu-depth-3 a.responsive-menu-pro-item-link {
+            padding-left:20%;
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu-depth-4 a.responsive-menu-pro-item-link {
+            padding-left:25%;
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu-depth-5 a.responsive-menu-pro-item-link {
+            padding-left:30%;
+        }
+    #responsive-menu-pro-container li.responsive-menu-pro-item {
+        width: 100%;
+        list-style: none;
+    }
+
+    #responsive-menu-pro-container li.responsive-menu-pro-item a {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        position: relative;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a {            padding: 0 0%;    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-submenu li.responsive-menu-pro-item a {            padding: 0 0%;    }
+
+
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .glyphicon,
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .fab,
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .fas {
+        margin-right: 15px;
+    }
+
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .responsive-menu-pro-subarrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .responsive-menu-pro-subarrow .glyphicon,
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .responsive-menu-pro-subarrow .fab,
+    #responsive-menu-pro-container li.responsive-menu-pro-item a .responsive-menu-pro-subarrow .fas {
+        margin-right: 0;
+    }
+
+    button#responsive-menu-pro-button .responsive-menu-pro-button-icon-inactive {
+        display: none;
+    }
+
+    button#responsive-menu-pro-button {
+        z-index: 99999;
+        display: none;
+        overflow: hidden;
+        outline: none;
+    }
+
+    button#responsive-menu-pro-button img {
+        max-width: 100%;
+    }
+
+    .responsive-menu-pro-label {
+        display: inline-block;
+        font-weight: 600;
+        margin: 0 5px;
+        vertical-align: middle;
+        pointer-events: none;
+    }
+
+    .responsive-menu-pro-accessible {
+        display: inline-block;
+    }
+
+    .responsive-menu-pro-accessible .responsive-menu-pro-box {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .responsive-menu-pro-label.responsive-menu-pro-label-top,
+    .responsive-menu-pro-label.responsive-menu-pro-label-bottom {
+        display: block;
+        margin: 0 auto;
+    }
+
+    button#responsive-menu-pro-button {
+        padding: 0 0;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+    }
+
+    .responsive-menu-pro-box {
+        width:25px;
+        height:19px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .responsive-menu-pro-inner {
+        display: block;
+        top: 50%;
+        margin-top:-1.5px;
+    }
+
+    .responsive-menu-pro-inner,
+    .responsive-menu-pro-inner::before,
+    .responsive-menu-pro-inner::after {
+        width:25px;
+        height:3px;
+        background-color:#ffffff;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .responsive-menu-pro-open .responsive-menu-pro-inner,
+    .responsive-menu-pro-open .responsive-menu-pro-inner::before,
+    .responsive-menu-pro-open .responsive-menu-pro-inner::after {
+        background-color:#ffffff;
+    }
+
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-inner,
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-inner::before,
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-inner::after,
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-open .responsive-menu-pro-inner,
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-open .responsive-menu-pro-inner::before,
+    button#responsive-menu-pro-button:hover .responsive-menu-pro-open .responsive-menu-pro-inner::after,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-inner,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-inner::before,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-inner::after,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-open .responsive-menu-pro-inner,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-open .responsive-menu-pro-inner::before,
+    button#responsive-menu-pro-button:focus .responsive-menu-pro-open .responsive-menu-pro-inner::after {
+        background-color:#ffffff;
+    }
+
+    .responsive-menu-pro-inner::before,
+    .responsive-menu-pro-inner::after {
+        content: "";
+        display: block;
+    }
+
+    .responsive-menu-pro-inner::before {
+        top:-8px;
+    }
+
+    .responsive-menu-pro-inner::after {
+        bottom:-8px;
+    }.responsive-menu-pro-boring .responsive-menu-pro-inner,
+.responsive-menu-pro-boring .responsive-menu-pro-inner::before,
+.responsive-menu-pro-boring .responsive-menu-pro-inner::after {
+    transition-property: none;
+}
+
+.responsive-menu-pro-boring.is-active .responsive-menu-pro-inner {
+    transform: rotate(45deg);
+}
+
+.responsive-menu-pro-boring.is-active .responsive-menu-pro-inner::before {
+    top: 0;
+    opacity: 0;
+}
+
+.responsive-menu-pro-boring.is-active .responsive-menu-pro-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+    button#responsive-menu-pro-button {
+        width:55px;
+        height:55px;
+        position:fixed;
+        top:15px;right:5%;
+        display: inline-block;
+        transition: transform 0.5s, background-color 0.5s;           background:#000000;    }        .responsive-menu-pro-open button#responsive-menu-pro-button:hover,
+        .responsive-menu-pro-open button#responsive-menu-pro-button:focus,
+        button#responsive-menu-pro-button:hover,
+        button#responsive-menu-pro-button:focus {
+            background:#000000;
+         }        .responsive-menu-pro-open button#responsive-menu-pro-button {
+            background:#000000;
+         }
+    button#responsive-menu-pro-button .responsive-menu-pro-box {
+        color:#ffffff;
+        pointer-events: none;
+    }
+
+    .responsive-menu-pro-open button#responsive-menu-pro-button .responsive-menu-pro-box {
+        color:#ffffff;
+    }
+
+    .responsive-menu-pro-label {
+        color:#ffffff;
+        font-size:14px;
+        line-height:13px;        pointer-events: none;
+    }
+
+    .responsive-menu-pro-label .responsive-menu-pro-button-text-open {
+        display: none;
+    }
+    .responsive-menu-pro-fade-top #responsive-menu-pro-container,
+    .responsive-menu-pro-fade-left #responsive-menu-pro-container,
+    .responsive-menu-pro-fade-right #responsive-menu-pro-container,
+    .responsive-menu-pro-fade-bottom #responsive-menu-pro-container {
+        display: none;
+    }
+    #responsive-menu-pro-container {
+        width:300px;right: 0;            background:rgba(5, 143, 200, 1);        transition: transform 0.5s;
+        text-align:left;            font-family:'TT Lakes Neue Compressed';    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-wrapper {
+        background:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-additional-content {
+        color:#ffffff;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box {
+        background:#ffffff;
+        border: 2px solid #dadada;
+        color:#333333;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box:-ms-input-placeholder {
+        color:#c7c7cd;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box::-webkit-input-placeholder {
+        color:#c7c7cd;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box:-moz-placeholder {
+        color:#c7c7cd;
+        opacity: 1;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-search-box::-moz-placeholder {
+        color:#c7c7cd;
+        opacity: 1;
+    }
+
+    #responsive-menu-pro-container .responsive-menu-pro-item-link,
+    #responsive-menu-pro-container #responsive-menu-pro-title,
+    #responsive-menu-pro-container .responsive-menu-pro-subarrow {
+        transition: background-color 0.5s,
+                    border-color 0.5s,
+                    color 0.5s;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title {
+        background-color:#212121;
+        color:#ffffff;
+        font-size:13px;
+        text-align:left;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title a {
+        color:#ffffff;
+        font-size:13px;
+        text-decoration: none;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title a:hover {
+        color:#ffffff;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title:hover {
+        background-color:#212121;
+        color:#ffffff;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title:hover a {
+        color:#ffffff;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title #responsive-menu-pro-title-image {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro-title #responsive-menu-pro-title-image img {        max-width: 100%;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro > li.responsive-menu-pro-item:first-child > a {
+        border-top:1px solid rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item .responsive-menu-pro-item-link {
+        font-size:18px;
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a {
+        line-height:30px;
+        border-bottom:1px solid rgba(5, 143, 200, 1);
+        color:#ffffff;
+        background-color:rgba(5, 143, 200, 1);            word-wrap: break-word;
+            height: auto;
+            padding-right:40px;    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:hover,
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:focus {
+        color:#ffffff;
+        background-color:rgba(5, 143, 200, 1);
+        border-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:hover .responsive-menu-pro-subarrow,
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:focus .responsive-menu-pro-subarrow  {
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:hover .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active,
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a:focus .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active {
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow {right: 0;
+        height:39px;
+        line-height:39px;
+        width:40px;
+        color:#ffffff;        border-left:1px solid rgba(5, 143, 200, 1);        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active {
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active:hover,
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active:focus  {
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow:hover,
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item a .responsive-menu-pro-subarrow:focus {
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+        background-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item.responsive-menu-pro-current-item > .responsive-menu-pro-item-link {
+        background-color:rgba(5, 143, 200, 1);
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+    }
+
+    #responsive-menu-pro-container #responsive-menu-pro li.responsive-menu-pro-item.responsive-menu-pro-current-item > .responsive-menu-pro-item-link:hover {
+        background-color:rgba(5, 143, 200, 1);
+        color:#ffffff;
+        border-color:rgba(5, 143, 200, 1);
+    }        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item .responsive-menu-pro-item-link {                font-family:'TT Lakes Neue Compressed';            font-size:16px;
+            text-align:left;
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a {                word-wrap: break-word;
+                height: auto;
+                padding-right:40px;            line-height:34px;
+            border-bottom:1px solid rgba(5, 143, 200, 1);
+            color:#ffffff;
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a:hover,
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a:focus {
+            color:#ffffff;
+            background-color:rgba(5, 143, 200, 1);
+            border-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a:hover .responsive-menu-pro-subarrow {
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a:hover .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active {
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a .responsive-menu-pro-subarrow {                left:unset;
+                right:0;           
+            height:39px;
+            line-height:39px;
+            width:40px;
+            color:#ffffff;                border-left:1px solid rgba(5, 143, 200, 1);
+                border-right:unset;
+            
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active {
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a .responsive-menu-pro-subarrow.responsive-menu-pro-subarrow-active:hover {
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item a .responsive-menu-pro-subarrow:hover {
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+            background-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item.responsive-menu-pro-current-item > .responsive-menu-pro-item-link {
+            background-color:rgba(5, 143, 200, 1);
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+        }
+
+        #responsive-menu-pro-container #responsive-menu-pro ul.responsive-menu-pro-submenu li.responsive-menu-pro-item.responsive-menu-pro-current-item > .responsive-menu-pro-item-link:hover {
+            background-color:rgba(5, 143, 200, 1);
+            color:#ffffff;
+            border-color:rgba(5, 143, 200, 1);
+        }
+}
+</style><script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {jQuery(document).ready(function($) {
+
+    var ResponsiveMenuPro = {
+        trigger: '.menu-hamburger',
+        animationSpeed:500,
+        breakpoint:8000,        isOpen: false,
+        activeClass: 'is-active',
+        container: '#responsive-menu-pro-container',
+        openClass: 'responsive-menu-pro-open',
+        activeArrow: '▲',
+        inactiveArrow: '▼',
+        wrapper: '#responsive-menu-pro-wrapper',
+        linkElement: '.responsive-menu-pro-item-link',
+        subMenuTransitionTime:200,
+        originalHeight: '',
+        openMenu: function() {
+            $(this.trigger).addClass(this.activeClass);
+            $('html').addClass(this.openClass);
+            $('.responsive-menu-pro-button-icon-active').hide();
+            $('.responsive-menu-pro-button-icon-inactive').show();                this.setWrapperTranslate();
+            this.isOpen = true;
+        },
+        closeMenu: function() {
+            $(this.trigger).removeClass(this.activeClass);
+            $('html').removeClass(this.openClass);
+            $('.responsive-menu-pro-button-icon-inactive').hide();
+            $('.responsive-menu-pro-button-icon-active').show();                this.clearWrapperTranslate();
+            $("#responsive-menu-pro > li").removeAttr('style');
+            this.isOpen = false;
+        },        triggerMenu: function() {
+            this.isOpen ? this.closeMenu() : this.openMenu();
+        },
+        triggerSubArrow: function(subarrow) {
+            var sub_menu = $(subarrow).parent().siblings('.responsive-menu-pro-submenu');
+            var self = this;
+                if(sub_menu.hasClass('responsive-menu-pro-submenu-open')) {
+                    sub_menu.slideUp(self.subMenuTransitionTime, 'linear',function() {
+                        $(this).css('display', '');
+                    }).removeClass('responsive-menu-pro-submenu-open');
+                    $(subarrow).html(this.inactiveArrow);
+                    $(subarrow).removeClass('responsive-menu-pro-subarrow-active');
+                } else {
+                    sub_menu.slideDown(self.subMenuTransitionTime, 'linear').addClass('responsive-menu-pro-submenu-open');
+                    $(subarrow).html(this.activeArrow);
+                    $(subarrow).addClass('responsive-menu-pro-subarrow-active');
+                }
+        },
+        menuHeight: function() {
+            return $(this.container).height();
+        },
+        menuWidth: function() {
+            return $(this.container).width();
+        },
+        wrapperHeight: function() {
+            return $(this.wrapper).height();
+        },            setWrapperTranslate: function() {
+                switch('right') {
+                    case 'left':
+                        translate = 'translateX(' + this.menuWidth() + 'px)'; break;
+                    case 'right':
+                        translate = 'translateX(-' + this.menuWidth() + 'px)'; break;
+                    case 'top':
+                        translate = 'translateY(' + this.wrapperHeight() + 'px)'; break;
+                    case 'bottom':
+                        translate = 'translateY(-' + this.menuHeight() + 'px)'; break;
+                }            },
+            clearWrapperTranslate: function() {
+                var self = this;            },
+        init: function() {
+
+            var self = this;
+            $(this.trigger).on('click', function(e){
+                e.stopPropagation();
+                self.triggerMenu();
+            });
+
+            $(this.trigger).mouseup(function(){
+                $(self.trigger).blur();
+            });
+
+            $('.responsive-menu-pro-subarrow').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                self.triggerSubArrow(this);
+            });
+
+            $(window).resize(function() {
+                if($(window).width() >= self.breakpoint) {
+                    if(self.isOpen){
+                        self.closeMenu();
+                    }
+                    $('#responsive-menu-pro, .responsive-menu-pro-submenu').removeAttr('style');
+                } else {                        if($('.responsive-menu-pro-open').length > 0){
+                            self.setWrapperTranslate();
+                        }                }
+            });
+             /* Desktop menu : hide on scroll down / show on scroll Up */            $(this.trigger).mousedown(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+            });            if (jQuery('#responsive-menu-pro-button').css('display') != 'none') {
+
+                $('#responsive-menu-pro-button,#responsive-menu-pro a.responsive-menu-pro-item-link,#responsive-menu-pro-wrapper input').focus( function() {
+                    $(this).addClass('is-active');
+                    $('html').addClass('responsive-menu-pro-open');
+                    $('#responsive-menu-pro li').css({"opacity": "1", "margin-left": "0"});
+                });
+
+                $('a,input,button').focusout( function( event ) {
+                    if ( ! $(this).parents('#responsive-menu-pro-container').length ) {
+                        $('html').removeClass('responsive-menu-pro-open');
+                        $('#responsive-menu-pro-button').removeClass('is-active');
+                    }
+                });
+            } else {            }            $('#responsive-menu-pro a.responsive-menu-pro-item-link').keydown(function(event) {
+                if ( [13,27,32,35,36,37,38,39,40].indexOf( event.keyCode) == -1) {
+                    return;
+                }
+                var link = $(this);
+                switch(event.keyCode) {
+                    case 13:                        link.click();
+                        break;
+                    case 27:                        var dropdown = link.parent('li').parents('.responsive-menu-pro-submenu');
+                        if ( dropdown.length > 0 ) {
+                            dropdown.hide();
+                            dropdown.prev().focus();
+                        }
+                        break;
+                    case 32:                        var dropdown = link.parent('li').find('.responsive-menu-pro-submenu');
+                        if ( dropdown.length > 0 ) {
+                            dropdown.show();
+                            dropdown.find('a, input, button, textarea').filter(':visible').first().focus();
+                        }
+                        break;
+                    case 35:                        var dropdown = link.parent('li').find('.responsive-menu-pro-submenu');
+                        if ( dropdown.length > 0 ) {
+                            dropdown.hide();
+                        }
+                        $(this).parents('#responsive-menu-pro').find('a.responsive-menu-pro-item-link').filter(':visible').last().focus();
+                        break;
+                    case 36:                        var dropdown = link.parent('li').find('.responsive-menu-pro-submenu');
+                        if( dropdown.length > 0 ) {
+                            dropdown.hide();
+                        }
+
+                        $(this).parents('#responsive-menu-pro').find('a.responsive-menu-pro-item-link').filter(':visible').first().focus();
+                        break;
+                    case 37:
+                        event.preventDefault();
+                        event.stopPropagation();                        if ( link.parent('li').prevAll('li').filter(':visible').first().length == 0) {
+                            link.parent('li').nextAll('li').filter(':visible').last().find('a').first().focus();
+                        } else {
+                            link.parent('li').prevAll('li').filter(':visible').first().find('a').first().focus();
+                        }                        if ( link.parent('li').children('.responsive-menu-pro-submenu').length ) {
+                            link.parent('li').children('.responsive-menu-pro-submenu').hide();
+                        }
+                        break;
+                    case 38:                        var dropdown = link.parent('li').find('.responsive-menu-pro-submenu');
+                        if( dropdown.length > 0 ) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            dropdown.find('a, input, button, textarea').filter(':visible').first().focus();
+                        } else {
+                            if ( link.parent('li').prevAll('li').filter(':visible').first().length == 0) {
+                                link.parent('li').nextAll('li').filter(':visible').last().find('a').first().focus();
+                            } else {
+                                link.parent('li').prevAll('li').filter(':visible').first().find('a').first().focus();
+                            }
+                        }
+                        break;
+                    case 39:
+                        event.preventDefault();
+                        event.stopPropagation();                        if( link.parent('li').nextAll('li').filter(':visible').first().length == 0) {
+                            link.parent('li').prevAll('li').filter(':visible').last().find('a').first().focus();
+                        } else {
+                            link.parent('li').nextAll('li').filter(':visible').first().find('a').first().focus();
+                        }                        if ( link.parent('li').children('.responsive-menu-pro-submenu').length ) {
+                            link.parent('li').children('.responsive-menu-pro-submenu').hide();
+                        }
+                        break;
+                    case 40:                        var dropdown = link.parent('li').find('.responsive-menu-pro-submenu');
+                        if ( dropdown.length > 0 ) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            dropdown.find('a, input, button, textarea').filter(':visible').first().focus();
+                        } else {
+                            if( link.parent('li').nextAll('li').filter(':visible').first().length == 0) {
+                                link.parent('li').prevAll('li').filter(':visible').last().find('a').first().focus();
+                            } else {
+                                link.parent('li').nextAll('li').filter(':visible').first().find('a').first().focus();
+                            }
+                        }
+                        break;
+                    }
+            });
+
+        }
+    };
+    ResponsiveMenuPro.init();
+});
+});</script>		<style type="text/css" id="wp-custom-css">
+			.team-block h2.title {
+  color: #ffffff;
+}
+.client-info-2 img {
+    max-width: 130px;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+    <!-- Ahrefs Tracking Code for APX Construction -->
+    <script type="rocketlazyloadscript" data-rocket-src="https://analytics.ahrefs.com/analytics.js" data-key="pkyGQGH1wFTlp4z3mqFmnA" async></script>
+
+<body class="wp-singular post-template-default single single-post postid-11181 single-format-standard wp-theme-apx-construction post-commercial-bathroom-remodeling responsive-menu-pro-slide-right">  
+
+            <div  class="fixed-header">
+            <header  id="header" class="layout-">
+	
+	<div  class="container-fluid p-0  d-md-block">
+		<div class="row no-gutters">		
+			<div class="col-12 head-tagline">
+				<span class="desktop-only">
+				<img src="/wp-content/themes/apx-construction/svg/phone-icon.svg" />&nbsp;&nbsp;CONTACT US! <a href="tel:(507) 387-6836">(507) 387-6836</a> | READY FOR A CAREER IN CONSTRUCTION? </span>VIEW OUR <u>											<a href="https://recruiting.paylocity.com/recruiting/jobs/All/8dbf92ff-b2af-44ff-8b99-9aae7fa8973f/APX-Construction-Group-LLC" target="">OPEN JOBS</a>
+					</u>.
+			</div>
+		</div>
+	</div>
+
+	<div  class="mobile-toolbar row d-flex justify-content-around align-items-center d-md-none">		
+	 	<div class="col m-logo">
+			<a href="/"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="/wp-content/uploads/2021/08/apx-logo-transparent-1.png" /><noscript><img src="/wp-content/uploads/2021/08/apx-logo-transparent-1.png" /></noscript></a>
+	 	</div>
+	 	<div class="col m-phone">
+			<img src="/wp-content/themes/apx-construction/svg/phone-icon.svg" />&nbsp;&nbsp;<a href="tel:(507) 387-6836">(507) 387-6836</a>
+		</div>
+	</div> 
+
+	<div  class="container-fluid header-main-wrap d-none d-md-block fixed">
+		<div class="row">	
+			<div class="col-4 col-lg-2">
+				<div class="logo">
+											<a href="/" class="float-logo"><img src="/wp-content/uploads/2023/05/APXlogo-cmyk-2.png" /></a>
+										<a href="/" class="d-none fixed-logo"><img src="/wp-content/uploads/2023/05/APXlogo-cmyk-2.png" /></a>
+				</div>
+			</div>
+			<div class="col-10 d-none d-xl-flex justify-content-end">
+				<ul id="menu-main-navigation" class="header-main-nav"><li id="menu-item-14260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14260"><a href="https://apxconstructiongroup.com/projects/">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-14344" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14344"><a href="https://apxconstructiongroup.com/apx-services/office-retail/">Office + Retail</a></li>
+	<li id="menu-item-14347" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14347"><a href="https://apxconstructiongroup.com/apx-services/industrial-warehouse/">Industrial + Warehouse</a></li>
+	<li id="menu-item-14348" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14348"><a href="https://apxconstructiongroup.com/apx-services/hospitality/">Hospitality</a></li>
+	<li id="menu-item-14349" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14349"><a href="https://apxconstructiongroup.com/apx-services/medical/">Medical</a></li>
+	<li id="menu-item-14271" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14271"><a href="https://apxconstructiongroup.com/apx-services/historic-preservation/">Historic Preservation</a></li>
+	<li id="menu-item-14350" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14350"><a href="https://apxconstructiongroup.com/apx-services/government-civil/">Government + Civil</a></li>
+	<li id="menu-item-14272" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14272"><a href="https://apxconstructiongroup.com/apx-services/multifamily-housing/">Multifamily Housing</a></li>
+	<li id="menu-item-14351" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14351"><a href="https://apxconstructiongroup.com/apx-services/community-nonprofit/">Community + Nonprofit</a></li>
+	<li id="menu-item-14354" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14354"><a href="https://apxconstructiongroup.com/apx-services/culture-recreation/">Culture + Recreation</a></li>
+	<li id="menu-item-14352" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14352"><a href="https://apxconstructiongroup.com/apx-services/multifamily-housing/">Multifamily Housing</a></li>
+	<li id="menu-item-14353" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14353"><a href="https://apxconstructiongroup.com/apx-services/athletic-facilities/">Athletic Facilities</a></li>
+	<li id="menu-item-14534" class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14534"><a href="https://apxconstructiongroup.com/apx-services/airplane-hangars/">Airplane Hangars</a></li>
+</ul>
+</li>
+<li id="menu-item-14254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14254"><a href="https://apxconstructiongroup.com/general-contracting-lp/">Capabilities</a>
+<ul class="sub-menu">
+	<li id="menu-item-14248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14248"><a href="https://apxconstructiongroup.com/commercial-construction/">Commercial Construction</a></li>
+	<li id="menu-item-14250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14250"><a href="https://apxconstructiongroup.com/general-contractor-services/">General Contracting Services</a></li>
+	<li id="menu-item-14251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14251"><a href="https://apxconstructiongroup.com/design-build-services/">Design-Build Services</a></li>
+	<li id="menu-item-14249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14249"><a href="https://apxconstructiongroup.com/owner-representatives/">Owner Representatives</a></li>
+	<li id="menu-item-14288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14288"><a href="https://apxconstructiongroup.com/pemb-construction/">PEMB Construction</a></li>
+	<li id="menu-item-14389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14389"><a href="https://apxconstructiongroup.com/hospitality-construction/">Hospitality Construction</a></li>
+	<li id="menu-item-14286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14286"><a href="https://apxconstructiongroup.com/commercial-remodeling/mankato/">Mankato Commercial Remodeling</a></li>
+	<li id="menu-item-14285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14285"><a href="https://apxconstructiongroup.com/commercial-remodeling/sioux-falls/">Sioux Falls Commercial Remodeling</a></li>
+	<li id="menu-item-14281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14281"><a href="https://apxconstructiongroup.com/agricultural-construction/">Minnesota’s Premiere Agricultural Construction Company</a></li>
+	<li id="menu-item-14284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14284"><a href="https://apxconstructiongroup.com/mankato-garage-condo-services/">Mankato’s #1 Garage Condo Design &#038; Build Services</a></li>
+	<li id="menu-item-14536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14536"><a href="https://apxconstructiongroup.com/commercial-construction/custom-airplane-hangars/">Minnesota’s #1 Builder for Custom Airplane Hangars</a></li>
+	<li id="menu-item-14287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14287"><a href="https://apxconstructiongroup.com/commercial-construction/multi-family-general-contractor/">Minnesota’s #1 MULTI FAMILY GENERAL CONTRACTOR</a></li>
+	<li id="menu-item-14283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14283"><a href="https://apxconstructiongroup.com/pickleball-court-construction/">Minnesota’s #1 Pickleball Court Construction Company</a></li>
+	<li id="menu-item-14282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14282"><a href="https://apxconstructiongroup.com/commercial-construction/mankato-commercial-construction/">Mankato’s #1 Commercial Construction Company</a></li>
+</ul>
+</li>
+<li id="menu-item-14262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14262"><a href="https://apxconstructiongroup.com/our-developments/">Our Developments</a></li>
+<li id="menu-item-14255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14255"><a href="https://apxconstructiongroup.com/our-team-apx/">Our Team</a>
+<ul class="sub-menu">
+	<li id="menu-item-14258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14258"><a href="https://apxconstructiongroup.com/our-community/">Our Community</a></li>
+</ul>
+</li>
+<li id="menu-item-14256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14256"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue</a>
+<ul class="sub-menu">
+	<li id="menu-item-14259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14259"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue Blog</a></li>
+	<li id="menu-item-14261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14261"><a href="https://apxconstructiongroup.com/build-blue-blog/press-room/">Press Room</a></li>
+	<li id="menu-item-14257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14257"><a href="https://apxconstructiongroup.com/build-blue-podcast/">Build Blue Podcast</a></li>
+</ul>
+</li>
+<li id="menu-item-14263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14263"><a href="https://apxconstructiongroup.com/apx-careers/">APX Careers</a></li>
+</ul> 
+				<div class="button-right">
+					<div class="buttons">
+						<a href="/contact" class="button blue-btn"><span>contact us</span> <span><img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" /></span><span></span></a>
+					</div> 
+				</div>
+			</div> 
+		</div> 
+	</div> 
+	  
+</header>        </div>
+    
+</body>
+</html>		
+				<div class="blog-single-header inner-hero-block">
+			<header id="header" class="layout-">
+	
+	<div class="container-fluid p-0  d-md-block">
+		<div class="row no-gutters">		
+			<div class="col-12 head-tagline">
+				<span class="desktop-only">
+				<img src="/wp-content/themes/apx-construction/svg/phone-icon.svg" />&nbsp;&nbsp;CONTACT US! <a href="tel:(507) 387-6836">(507) 387-6836</a> | READY FOR A CAREER IN CONSTRUCTION? </span>VIEW OUR <u>											<a href="https://recruiting.paylocity.com/recruiting/jobs/All/8dbf92ff-b2af-44ff-8b99-9aae7fa8973f/APX-Construction-Group-LLC" target="">OPEN JOBS</a>
+					</u>.
+			</div>
+		</div>
+	</div>
+
+	<div class="mobile-toolbar row d-flex justify-content-around align-items-center d-md-none">		
+	 	<div class="col m-logo">
+			<a href="/"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="/wp-content/uploads/2021/08/apx-logo-transparent-1.png" /><noscript><img src="/wp-content/uploads/2021/08/apx-logo-transparent-1.png" /></noscript></a>
+	 	</div>
+	 	<div class="col m-phone">
+			<img src="/wp-content/themes/apx-construction/svg/phone-icon.svg" />&nbsp;&nbsp;<a href="tel:(507) 387-6836">(507) 387-6836</a>
+		</div>
+	</div> 
+
+	<div class="container-fluid header-main-wrap d-none d-md-block ">
+		<div class="row">	
+			<div class="col-4 col-lg-2">
+				<div class="logo">
+											<a href="/" class="float-logo"><img src="/wp-content/uploads/2023/05/APXlogo-cmyk-2.png" /></a>
+										<a href="/" class="d-none fixed-logo"><img src="/wp-content/uploads/2023/05/APXlogo-cmyk-2.png" /></a>
+				</div>
+			</div>
+			<div class="col-10 d-none d-xl-flex justify-content-end">
+				<ul id="menu-main-navigation-1" class="header-main-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14260"><a href="https://apxconstructiongroup.com/projects/">Projects</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14344"><a href="https://apxconstructiongroup.com/apx-services/office-retail/">Office + Retail</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14347"><a href="https://apxconstructiongroup.com/apx-services/industrial-warehouse/">Industrial + Warehouse</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14348"><a href="https://apxconstructiongroup.com/apx-services/hospitality/">Hospitality</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14349"><a href="https://apxconstructiongroup.com/apx-services/medical/">Medical</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14271"><a href="https://apxconstructiongroup.com/apx-services/historic-preservation/">Historic Preservation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14350"><a href="https://apxconstructiongroup.com/apx-services/government-civil/">Government + Civil</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14272"><a href="https://apxconstructiongroup.com/apx-services/multifamily-housing/">Multifamily Housing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14351"><a href="https://apxconstructiongroup.com/apx-services/community-nonprofit/">Community + Nonprofit</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14354"><a href="https://apxconstructiongroup.com/apx-services/culture-recreation/">Culture + Recreation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14352"><a href="https://apxconstructiongroup.com/apx-services/multifamily-housing/">Multifamily Housing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14353"><a href="https://apxconstructiongroup.com/apx-services/athletic-facilities/">Athletic Facilities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-apx-services menu-item-14534"><a href="https://apxconstructiongroup.com/apx-services/airplane-hangars/">Airplane Hangars</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14254"><a href="https://apxconstructiongroup.com/general-contracting-lp/">Capabilities</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14248"><a href="https://apxconstructiongroup.com/commercial-construction/">Commercial Construction</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14250"><a href="https://apxconstructiongroup.com/general-contractor-services/">General Contracting Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14251"><a href="https://apxconstructiongroup.com/design-build-services/">Design-Build Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14249"><a href="https://apxconstructiongroup.com/owner-representatives/">Owner Representatives</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14288"><a href="https://apxconstructiongroup.com/pemb-construction/">PEMB Construction</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14389"><a href="https://apxconstructiongroup.com/hospitality-construction/">Hospitality Construction</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14286"><a href="https://apxconstructiongroup.com/commercial-remodeling/mankato/">Mankato Commercial Remodeling</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14285"><a href="https://apxconstructiongroup.com/commercial-remodeling/sioux-falls/">Sioux Falls Commercial Remodeling</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14281"><a href="https://apxconstructiongroup.com/agricultural-construction/">Minnesota’s Premiere Agricultural Construction Company</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14284"><a href="https://apxconstructiongroup.com/mankato-garage-condo-services/">Mankato’s #1 Garage Condo Design &#038; Build Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14536"><a href="https://apxconstructiongroup.com/commercial-construction/custom-airplane-hangars/">Minnesota’s #1 Builder for Custom Airplane Hangars</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14287"><a href="https://apxconstructiongroup.com/commercial-construction/multi-family-general-contractor/">Minnesota’s #1 MULTI FAMILY GENERAL CONTRACTOR</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14283"><a href="https://apxconstructiongroup.com/pickleball-court-construction/">Minnesota’s #1 Pickleball Court Construction Company</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14282"><a href="https://apxconstructiongroup.com/commercial-construction/mankato-commercial-construction/">Mankato’s #1 Commercial Construction Company</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14262"><a href="https://apxconstructiongroup.com/our-developments/">Our Developments</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14255"><a href="https://apxconstructiongroup.com/our-team-apx/">Our Team</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14258"><a href="https://apxconstructiongroup.com/our-community/">Our Community</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14256"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14259"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14261"><a href="https://apxconstructiongroup.com/build-blue-blog/press-room/">Press Room</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14257"><a href="https://apxconstructiongroup.com/build-blue-podcast/">Build Blue Podcast</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14263"><a href="https://apxconstructiongroup.com/apx-careers/">APX Careers</a></li>
+</ul> 
+				<div class="button-right">
+					<div class="buttons">
+						<a href="/contact" class="button blue-btn"><span>contact us</span> <span><img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" /></span><span></span></a>
+					</div> 
+				</div>
+			</div> 
+		</div> 
+	</div> 
+	  
+</header>			
+			<div class="container">
+				<div class="blog-single-header-bg" style="background-image: url(/wp-content/uploads/2022/04/AdobeStock_341321750-scaled.jpeg);">
+					<div class="overlay"></div>
+					<div class="title-wrap d-flex justify-content-center align-items-center">
+						<div><h1 class="wow fadeInUp" data-wow-delay="0.2s">7 Commercial Bathroom Remodeling Ideas (2024 Update)</h1></div>						
+						<div class="post-date wow fadeInUp" data-wow-delay="0.3s">Posted on&nbsp;May 02, 2022 &nbsp;By&nbsp;Jamie Jacobs</div>
+					</div>					
+				</div>
+			</div>			 
+		</div>		 
+		<div class="blog-single-author">			
+			<div class="container">
+				<div class="blog-social-auther-wrap d-flex align-items-center align-items-md-start">
+					<div class="social-media-links">
+						<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%200'%3E%3C/svg%3E" alt="share" width="100%" data-lazy-src="/wp-content/themes/apx-construction/svg/share-icon.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/share-icon.svg" alt="share" width="100%"></noscript>
+						<div class="heateor_sss_sharing_container heateor_sss_horizontal_sharing" data-heateor-ss-offset="0" data-heateor-sss-href='https://apxconstructiongroup.com/commercial-bathroom-remodeling/'><div class="heateor_sss_sharing_ul"><a aria-label="Linkedin" class="heateor_sss_button_linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fapxconstructiongroup.com%2Fcommercial-bathroom-remodeling%2F" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:22px;height:22px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a aria-label="Facebook" class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fapxconstructiongroup.com%2Fcommercial-bathroom-remodeling%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#0765FE;width:22px;height:22px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path fill="#fff" d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16Z"></path></svg></span></a><a aria-label="Twitter" class="heateor_sss_button_twitter" href="https://twitter.com/intent/tweet?text=7%20Commercial%20Bathroom%20Remodeling%20Ideas%20%282024%20Update%29&url=https%3A%2F%2Fapxconstructiongroup.com%2Fcommercial-bathroom-remodeling%2F" title="Twitter" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_twitter" style="background-color:#55acee;width:22px;height:22px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-4 -4 39 39"><path d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z" fill="#fff"></path></svg></span></a><a aria-label="Youtube" class="heateor_sss_button_youtube" href="" title="Youtube" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_youtube" style="background-color:red;width:22px;height:22px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path fill="#fff" d="M26.78 11.6s-.215-1.515-.875-2.183c-.837-.876-1.774-.88-2.204-.932-3.075-.222-7.693-.222-7.693-.222h-.01s-4.618 0-7.697.222c-.43.05-1.368.056-2.205.932-.66.668-.874 2.184-.874 2.184S5 13.386 5 15.166v1.67c0 1.78.22 3.56.22 3.56s.215 1.516.874 2.184c.837.875 1.936.85 2.426.94 1.76.17 7.48.22 7.48.22s4.623-.007 7.7-.23c.43-.05 1.37-.056 2.205-.932.66-.668.875-2.184.875-2.184s.22-1.78.22-3.56v-1.67c0-1.78-.22-3.56-.22-3.56zm-13.052 7.254v-6.18l5.944 3.1-5.944 3.08z"></path></svg></span></a></div><div class="heateorSssClear"></div></div>					</div>
+					<div class="blog-user-meta-wrap">					
+						<div class="blog-user-meta d-flex">
+			                <div data-bg="/wp-content/uploads/2021/08/jamie-jacobs-img-e1633719501305-150x150.png" class="author-img rocket-lazyload" style=""></div>
+			                <div class="author-data">
+			                    <div class="name">Jamie Jacobs</div>
+			                    <div class="bio">Jamie Jacobs joined APX Construction Group in June of 2020 specializing in interior design, marketing, event planning, and business development.</div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+				<div class="post-cat">
+					<li class="categories">
+						<h6>POST CATEGORIES</h6>
+						<ul>
+							<li class="cat-item"><a href="/blog?category=build-blue-podcast">Build Blue Podcast</a></li><li class="cat-item"><a href="/blog?category=business">Business</a></li><li class="cat-item"><a href="/blog?category=community">Community</a></li><li class="cat-item"><a href="/blog?category=design">Design</a></li><li class="cat-item"><a href="/blog?category=health">Health</a></li><li class="cat-item"><a href="/blog?category=uncategorized">Uncategorized</a></li> 
+						</ul>
+					</li>
+									</div>
+			</div>
+		</div>
+
+		<div class="blog-single-content-wrap">
+			<div class="container">
+				<div class="blog-single-content">			 				 
+					
+<p>ChatGPT said:</p>
+
+
+
+<p>ChatGPT</p>
+
+
+
+<p>Commercial bathroom remodeling is essential, no matter what you call it—whether it&#8217;s the porcelain throne, the oval office, or the outhouse. Bathrooms are necessary everywhere, and just as the condition of your bathroom can make an impression on guests in your home, it absolutely makes an impression on your commercial business.</p>
+
+
+
+<p>Whether you own a hotel, office park, convenience store, or something else entirely, clean and updated commercial bathrooms are an essential part of retaining customers and employees. <a href="https://apxconstructiongroup.com/commercial-remodeling/" data-type="URL" data-id="https://apxconstructiongroup.com/commercial-remodeling/" target="_blank" rel="noreferrer noopener">Commercial bathroom remodels</a> not only enhances the aesthetic appeal of your facilities but also contributes to customer satisfaction and employee comfort. Additionally, commercial bathroom remodels have a fantastic return on investment (ROI) of around 85%!</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc"><h2>Inside the Blog:</h2><nav><ul><li class=""><a href="#use-these-7-commercial-bathroom-remodeling-ideas-to-help-set-your-renovation-project-up-for-success">Match the Aesthetics to the Rest of Your Building</a><ul><li class=""><a href="#1-match-the-aesthetics-to-the-rest-of-your-building">Save on Water</a></li><li class=""><a href="#2-save-on-water">Use Modern Technology</a></li><li class=""><a href="#3-use-modern-technology">Lighting Makes a Huge Difference</a></li><li class=""><a href="#4-lighting-makes-a-huge-difference">Hire a Reputable Commercial Contractor</a></li><li class=""><a href="#5-hire-a-reputable-commercial-contractor">Set a Reasonable Budget</a></li><li class=""><a href="#6-set-a-reasonable-budget">Keep It Spotless</a></li><li class=""><a href="#7-keep-it-spotless">7) Keep It Spotless</a></li></ul></li><li class=""><a href="#work-with-an-experienced-commercial-remodeling-contractor">Work With an Experienced Commercial Remodeling Contractor</a></li></ul></nav></div>
+
+
+
+<h2 class="wp-block-heading" id="use-these-7-commercial-bathroom-remodeling-ideas-to-help-set-your-renovation-project-up-for-success">Use these 7 commercial bathroom remodeling ideas to help set your renovation project up for success.</h2>
+
+
+
+<figure class="wp-block-image size-full"><picture><source data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors.webp 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" height="683" width="1024" data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-768x512.jpeg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11469 sp-no-webp" alt="Commercial bathroom remodeling ideas with three sinks and mirrors." fetchpriority="high" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 1"  data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors.jpeg" ><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors.jpeg" height="683" width="1024" srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-bathroom-mirrors-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11469 sp-no-webp" alt="Commercial bathroom remodeling ideas with three sinks and mirrors." fetchpriority="high" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 1"  ></noscript> </picture></figure>
+
+
+
+<h3 class="wp-block-heading" id="1-match-the-aesthetics-to-the-rest-of-your-building">1) Match the Aesthetics to the Rest of Your Building</h3>
+
+
+
+<p>Keep your design theme consistent as you remodel your commercial bathroom. If you have a sophisticated, neutral-colored building, aim for a bathroom that matches. And if your building&#8217;s interior design features bold colors and fun aesthetics, make sure your bathroom doesn&#8217;t feel cold and out of place.</p>
+
+
+
+<p>Since trends come and go, neutral walls, floors, and countertops are usually a great choice. Stainless steel holds up for many years, so you&#8217;ll get more bang for your buck if you opt for stainless steel hardware.</p>
+
+
+
+<p>Feel free to play with textures in your design as they can be a great aesthetic element. Try adding glass tiles to vertical surfaces to add visual interest to the walls.</p>
+
+
+
+<h3 class="wp-block-heading" id="2-save-on-water">2) Save on Water</h3>
+
+
+
+<p>You know that water bills can quickly get overwhelming in a commercial building, and bathrooms can be big culprits. Use the opportunity of a commercial bathroom remodeling project to implement <a href="https://www.dnr.state.mn.us/waters/watermgmt_section/appropriations/water-conservation-commercial.html" target="_blank" data-type="URL" data-id="https://www.dnr.state.mn.us/waters/watermgmt_section/appropriations/water-conservation-commercial.html" rel="noreferrer noopener">water-saving strategies</a>.</p>
+
+
+
+<p>Water-saving ideas in commercial restrooms include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Motion detectors on sinks</li>
+
+
+
+<li>Faucet restrictors</li>
+
+
+
+<li>Single flush or dual flush options</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><picture><source data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet.webp 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" height="683" width="1024" data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-768x512.jpeg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11471 sp-no-webp" alt="Automatic faucets inside bathroom; commercial bathroom remodeling ideas" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 2"  data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet.jpeg" ><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet.jpeg" height="683" width="1024" srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-faucet-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11471 sp-no-webp" alt="Automatic faucets inside bathroom; commercial bathroom remodeling ideas" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 2"  ></noscript> </picture></figure>
+
+
+
+<h3 class="wp-block-heading" id="3-use-modern-technology">3) Use Modern Technology</h3>
+
+
+
+<p>Modern restroom technology not only allows your commercial bathroom to look and feel contemporary, but it often helps your guests keep away germs and reduce waste.</p>
+
+
+
+<p>Commercial bathroom remodeling projects should ultimately make your guests feel comfortable and prioritized, and using outdated technology can make guests feel out of place. Include the following technologies in your renovation:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://www.totalrestroom.com/collections/commercial-soap-dispensers-for-public-bathrooms" target="_blank" data-type="URL" data-id="https://www.totalrestroom.com/collections/commercial-soap-dispensers-for-public-bathrooms" rel="noreferrer noopener">Automatic soap dispensers</a></li>
+
+
+
+<li>Electric air hand dryers</li>
+
+
+
+<li>Waterless urinals</li>
+
+
+
+<li>Motion sensors for overhead lighting</li>
+
+
+
+<li>Motion sense flushing</li>
+
+
+
+<li>Foot-operated door openers</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="4-lighting-makes-a-huge-difference">4) Lighting Makes a Huge Difference</h3>
+
+
+
+<figure class="wp-block-image size-full"><picture><source data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights.webp 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" height="683" width="1024" data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-768x512.jpeg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11475 sp-no-webp" alt="modern bathroom design with lights; commercial bathroom remodeling" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 3"  data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights.jpeg" ><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights.jpeg" height="683" width="1024" srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-ideas-lights-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11475 sp-no-webp" alt="modern bathroom design with lights; commercial bathroom remodeling" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 3"  ></noscript> </picture></figure>
+
+
+
+<p>Attractive and fun lighting can take a bathroom, or any room, to the next level in an affordable and simple way. When it comes to commercial restrooms especially, guests want to feel like they&#8217;re in a clean and well-kept area. Great lighting helps rooms feel modern and stylish, whereas harsh or extremely dim lighting can make guests feel uncomfortable.</p>
+
+
+
+<p>Sit down with an interior designer or design-build contractor to work out the details of smaller design choices like <a href="https://homelighterinc.com/blog/6-tips-for-selecting-proper-commercial-lighting-fixtures/" target="_blank" data-type="URL" data-id="https://homelighterinc.com/blog/6-tips-for-selecting-proper-commercial-lighting-fixtures/" rel="noreferrer noopener">lighting fixtures</a>. The two of you can come up with a fun and modern design plan for your lighting. Consider details like:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Chandeliers</li>
+
+
+
+<li>Wall sconces</li>
+
+
+
+<li>Puck lights</li>
+
+
+
+<li><a href="https://www.wayfair.com/keyword.php?keyword=indoor+edison+lighting+fixture" target="_blank" rel="noopener">Edison lights</a></li>
+</ul>
+
+
+
+<p>To go above and beyond with your lighting scheme, consider mixing and matching the different kinds of lighting:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Ambient Lighting</strong>: Lights up the entire room with ceiling-mounted fixtures or LED downlights</li>
+
+
+
+<li><strong>Task Lighting</strong>: Lamps and pendant lights that illuminate one small area</li>
+
+
+
+<li><strong>Accent Lighting</strong>: Highlighting a feature or decoration with wall-mounted fixtures or track lights</li>
+
+
+
+<li><strong>Decorative Lighting</strong>: Light that makes a statement, often achieved with pendant lighting, wall sconces, and floor lamps</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading" id="5-hire-a-reputable-commercial-contractor">5) Hire a Reputable Commercial Contractor</h3>
+
+
+
+<figure class="wp-block-image size-full"><picture><source data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs.webp 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-768x513.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20684'%3E%3C/svg%3E" height="684" width="1024" data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-768x513.jpeg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11473 sp-no-webp" alt="two men on Jobsite going over commercial bathroom remodeling costs" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 4"  data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs.jpeg" ><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs.jpeg" height="684" width="1024" srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-costs-768x513.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11473 sp-no-webp" alt="two men on Jobsite going over commercial bathroom remodeling costs" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 4"  ></noscript> </picture></figure>
+
+
+
+<p>Ultimately, a well-executed commercial bathroom remodel is in the hands of the contractor you choose to complete the job. When you&#8217;re investing time and money into a big project like a commercial restroom renovation, you need to ensure that you choose a high-quality contractor with plenty of proven experience.</p>
+
+
+
+<p>In most cases, going for a dramatically cheaper contractor ends up in frustration because their prices are usually a reflection of the quality of their work. You&#8217;d much rather spend a little bit more for a highly-rated contractor who gets it done right the first time rather than paying twice because a cheap, inexperienced contractor didn&#8217;t execute your vision.</p>
+
+
+
+<p>You have two choices when it comes to a commercial bathroom remodel:</p>
+
+
+
+<ul class="wp-block-list">
+<li>General Contractor</li>
+
+
+
+<li>Design-Build Contractor</li>
+</ul>
+
+
+
+<p>At APX Construction Group, we offer both services, so it comes down to how you prefer to move forward.</p>
+
+
+
+<p>A <a href="https://apxconstructiongroup.com/general-contracting-services/">general contractor</a> is a construction company that works directly with the client to construct the remodel. In order to get design plans, the client must work with an architect or interior designer who shares the design with the general contractor.</p>
+
+
+
+<p>A design-build contractor has designers and builders fully integrated into one team. When you choose<a href="https://apxconstructiongroup.com/design-build-services/"> design-build services</a>, you work with one team throughout the entire remodeling process.</p>
+
+
+
+<h3 class="wp-block-heading" id="6-set-a-reasonable-budget">6) Set a Reasonable Budget</h3>
+
+
+
+<p><a href="https://apxconstructiongroup.com/commercial-renovation-costs/" target="_blank" data-type="URL" data-id="https://apxconstructiongroup.com/commercial-renovation-costs/" rel="noreferrer noopener">Estimating the costs of your commercial remodeling project</a> is extremely important. No one wants to spend an arm and a leg on any remodeling project. In order to stay in a comfortable price range, set a budget when you collaborate with your contractor. Your contractor will either confirm or deny that your ideal remodel is possible within your preferred budget. If it&#8217;s not, they&#8217;ll work with you to set realistic expectations.</p>
+
+
+
+<p>Remodels often cost more than people want, but the good news is that bathroom remodels are consistently one of the <a href="https://www.smithandassociates.com/blog/the-7-most-profitable-home-improvements-you-can-make.html" target="_blank" rel="noopener">most profitable renovations</a> for homes and businesses.</p>
+
+
+
+<h3 class="wp-block-heading" id="7-keep-it-spotless">7) Keep It Spotless</h3>
+
+
+
+<figure class="wp-block-image size-full"><picture><source data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean.webp 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" type="image/webp"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20683'%3E%3C/svg%3E" height="683" width="1024" data-lazy-srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-768x512.jpeg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11476 sp-no-webp" alt="public Interior of spotless modern bathroom; commercial bathroom remodeling" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 5"  data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean.jpeg" ><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean.jpeg" height="683" width="1024" srcset="https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean.jpeg 1024w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-300x200.jpeg 300w, https://apxconstructiongroup.com/wp-content/uploads/2022/09/commercial-bathroom-remodeling-clean-768x512.jpeg 768w" sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-11476 sp-no-webp" alt="public Interior of spotless modern bathroom; commercial bathroom remodeling" decoding="async" title="7 Commercial Bathroom Remodeling Ideas (2024 Update) 5"  ></noscript> </picture></figure>
+
+
+
+<p>When the commercial bathroom remodels are complete, you want to ensure that your investment pays off for a long time. Nothing turns off guests more than a dirty, unkempt restroom. Avoid stained mirrors, dirty floors, overflowing trash bins, and unpleasant smells by staying on top of cleanliness.</p>
+
+
+
+<p>Make sure your cleaning staff has a regular cleaning schedule and that there are ample trash cans and air fresheners in place.</p>
+
+
+
+<h2 class="wp-block-heading" id="work-with-an-experienced-commercial-remodeling-contractor">Work With an Experienced Commercial Remodeling Contractor</h2>
+
+
+
+<p>Undertaking a commercial bathroom remodeling project is an exciting, yet stressful time. The experienced team at APX Construction Group is here to reduce your stress every step of the way.</p>
+
+
+
+<p>Experience the most seamless remodeling project you&#8217;ve ever had when you <a href="https://apxconstructiongroup.com/contact/">reach out to APX Construction Group</a> today!</p>
+					<div class="clearfix"></div>
+									</div>
+			</div>
+		</div>
+
+		<section class="blog-listing-block related-post-wrap">
+		    <div class="container">
+		        	                <div class="row">
+	                    <div class="col-12">
+	                        <h2 class="title wow fadeInUp" data-wow-delay="0.2s">Related Posts</h2>
+	                    </div>  
+	                    <div class="col-12 d-flex align-items-center justify-content-center">
+	                    	<a href="/blog" class="button blue-line-btn view-all-btn wow fadeInUp" data-wow-delay="0.3s"><span>View All Posts</span><span><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Arrow" data-lazy-src="/wp-content/themes/apx-construction/svg/button-arrow-blue.svg" /><noscript><img src="/wp-content/themes/apx-construction/svg/button-arrow-blue.svg" alt="Arrow" /></noscript></span><span></span></a> 
+	                    </div>              
+	                </div>		            	            
+		            <div class="row">
+		                                    
+		                    <div class="col-sm-6 col-lg-4 px-11px-custom">
+		                        <div data-bg="/wp-content/uploads/2021/09/East-Lansing-05.jpeg" class="post-wrapper bg-img-1 d-flex align-items-end rocket-lazyload" style="">
+		                            <div class="post-cat-wrap"><span>Post Topics:&nbsp;Business</span></div>
+		                            <div class="single-post-wrap d-flex align-items-center">
+		                               <div>
+		                                    <div class="grid-title wow fadeInUp" data-wow-delay="0.4s">How Much Does It Cost to Build Student Housing?</div>
+		                                    <div class="grid-para wow fadeInUp" data-wow-delay="0.5s">How much does it cost to build student housing in 2026? Student housing construction costs typically range from $200–$350 per square foot, with per-bed pricing averaging $90,000–$200,000+, ...</div>
+		                               </div>
+		                                <a href="https://apxconstructiongroup.com/build-student-housing/" class="button line-btn read-more-btn wow fadeInUp" data-wow-delay="0.6s"><span>Read More</span> <span><img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" /></span><span></span></a>                                
+		                            </div>
+		                        </div>
+		                    </div>
+		                                    
+		                    <div class="col-sm-6 col-lg-4 px-11px-custom">
+		                        <div data-bg="/wp-content/uploads/2024/04/my-place-01.jpg" class="post-wrapper bg-img-1 d-flex align-items-end rocket-lazyload" style="">
+		                            <div class="post-cat-wrap"><span>Post Topics:&nbsp;Community</span></div>
+		                            <div class="single-post-wrap d-flex align-items-center">
+		                               <div>
+		                                    <div class="grid-title wow fadeInUp" data-wow-delay="0.4s">Athletic Facility Pricing Guide: What It Really Costs to Build in 2026</div>
+		                                    <div class="grid-para wow fadeInUp" data-wow-delay="0.5s">Planning an athletic facility in 2026? This Athletic Facility Pricing Guide provides a clear, confident breakdown of construction costs, key pricing drivers, and smart budgeting insights for gyms, ...</div>
+		                               </div>
+		                                <a href="https://apxconstructiongroup.com/athletic-facility-pricing-guide/" class="button line-btn read-more-btn wow fadeInUp" data-wow-delay="0.6s"><span>Read More</span> <span><img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" /></span><span></span></a>                                
+		                            </div>
+		                        </div>
+		                    </div>
+		                                    
+		                    <div class="col-sm-6 col-lg-4 px-11px-custom">
+		                        <div data-bg="/wp-content/uploads/2024/12/multi-family-general-contractor.jpg" class="post-wrapper bg-img-1 d-flex align-items-end rocket-lazyload" style="">
+		                            <div class="post-cat-wrap"><span>Post Topics:&nbsp;Business</span></div>
+		                            <div class="single-post-wrap d-flex align-items-center">
+		                               <div>
+		                                    <div class="grid-title wow fadeInUp" data-wow-delay="0.4s">Multifamily General Contractor: Building Strong Communities with APX Construction Group</div>
+		                                    <div class="grid-para wow fadeInUp" data-wow-delay="0.5s">APX Construction Group is a trusted multifamily general contractor delivering high-quality apartment and mixed-use developments across Minnesota and South Dakota. Learn how our experienced team, ...</div>
+		                               </div>
+		                                <a href="https://apxconstructiongroup.com/multifamily-general-contractor/" class="button line-btn read-more-btn wow fadeInUp" data-wow-delay="0.6s"><span>Read More</span> <span><img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" /></span><span></span></a>                                
+		                            </div>
+		                        </div>
+		                    </div>
+		                		            </div>
+		        		        		        <div class="row">
+		            <div class="offset-md-6 col-md-6 px-11px-custom">
+		                <div class="d-flex justify-content-end">
+		                    <div class="pagination"><span class='btn-num' class="current">1</span><a  class='btn-num' href='?page-count=2' class="inactive">2</a><a  class='btn-num' href='?page-count=3' class="inactive">3</a><a class='btn-num next' href="?page-count=2"><span>next&nbsp;<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt='right arrow' data-lazy-src="/wp-content/themes/apx-construction/svg/pagination-right-arrow.svg" /><noscript><img src='/wp-content/themes/apx-construction/svg/pagination-right-arrow.svg' alt='right arrow' /></noscript></span></a></div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="related-post-shape-white">
+				<img class="top-shape-white" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="/wp-content/themes/apx-construction/svg/white-block-shape-bottom.svg"><noscript><img class="top-shape-white" src="/wp-content/themes/apx-construction/svg/white-block-shape-bottom.svg" alt=""></noscript>
+			</div>
+			<div class="related-post-shape-blue">
+				<img class="top-shape-white" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="/wp-content/themes/apx-construction/svg/blue-block-shape.svg"><noscript><img class="top-shape-white" src="/wp-content/themes/apx-construction/svg/blue-block-shape.svg" alt=""></noscript> 
+			</div>
+		</section> 
+		
+<footer>
+            <div class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer-logo-wrapper">
+                    <a href="/"><img src="/wp-content/uploads/2023/05/APXlogo-cmyk-2.png" alt="footer-logo" width="100%"></a>
+                </div>
+                                    <div class="contact-wrap">
+                        <div class="contact-title">Locations</div>
+                        <div class="contact-info"><b>MINNESOTA OFFICE:</b><br />
+1531 Madison Avenue, Suite 200<br />
+Mankato, MN 56001<br />
+<br />
+<b>WAREHOUSE:</b><br />
+1021 Elevate Lane, Suite 200<br />
+Mankato, MN 56001<br />
+<br />
+<b>SOUTH DAKOTA OFFICE:</b><br />
+404 West 9th Street<br />
+Sioux Falls, SD 57104</div>
+                        <div class="contact-title mt-3">email</div>
+                        <div class="contact-info"><a href="mailto:info@apxconstructiongroup.com">info@apxconstructiongroup.com</a></div>
+                        <div class="contact-title mt-3">phone</div>
+                        <div class="contact-info">Mankato, MN: <a href="tel:507-387-6836">(507) 387-6836</a></div>
+                        <div class="contact-info mb-4">SIOUX FALLS, SD: <a href="tel:(507) 387-6836">(507) 387-6836</a></div>
+                    </div>
+                                <div class="social-icons">
+                    <ul class="d-flex pl-0">
+                        <li><a href="https://www.facebook.com/apxconstructiongroup/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="facebook" data-lazy-src="/wp-content/themes/apx-construction/svg/facebook.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/facebook.svg" alt="facebook"></noscript></a></li>
+                        <li><a href="https://www.instagram.com/apxconstructiongroup/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="instagram" data-lazy-src="/wp-content/themes/apx-construction/svg/ig.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/ig.svg" alt="instagram"></noscript></a></li>
+                        <li><a href="https://twitter.com/apxconstruction" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="twitter" data-lazy-src="/wp-content/themes/apx-construction/svg/twitterx.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/twitterx.svg" alt="twitter"></noscript></a></li>
+                        <li><a href="https://www.linkedin.com/company/apx-construction-group" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="linkedin" data-lazy-src="/wp-content/themes/apx-construction/svg/linkedin.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/linkedin.svg" alt="linkedin"></noscript></a></li>
+			<li><a href="https://www.pinterest.com/APX_Construction_Group/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="pinterest" data-lazy-src="/wp-content/themes/apx-construction/svg/pinterest.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/pinterest.svg" alt="pinterest"></noscript></a></li>
+                    </ul>
+                </div>
+
+                <div class="awards-wrapper d-none d-md-flex">
+                      
+                                                <a href="#" target="_blank">
+                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="awards-edited-02" data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2021/08/awards-edited-02.png" /><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2021/08/awards-edited-02.png" alt="awards-edited-02" /></noscript>
+                                                    </a>
+                         
+                      
+                                                <a href="#" target="_blank">
+                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="awards-edited-01" data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2021/08/awards-edited-01.png" /><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2021/08/awards-edited-01.png" alt="awards-edited-01" /></noscript>
+                                                    </a>
+                         
+                      
+                                                <a href="#" target="_blank">
+                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="awards-edited-04-mbcea" data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2023/12/awards-edited-04-mbcea.png" /><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2023/12/awards-edited-04-mbcea.png" alt="awards-edited-04-mbcea" /></noscript>
+                                                    </a>
+                         
+                      
+                                                <a href="#" target="_blank">
+                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="awards-edited-05-metallic" data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2023/12/awards-edited-05-metallic-1-e1703780788404.png" /><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2023/12/awards-edited-05-metallic-1-e1703780788404.png" alt="awards-edited-05-metallic" /></noscript>
+                                                    </a>
+                         
+                      
+                                                <a href="https://www.esgr.mil/Employer-Awards/Patriot-Award" target="_blank">
+                                                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="esgr-patriot-award" data-lazy-src="https://apxconstructiongroup.com/wp-content/uploads/2024/03/esgr-patriot-award.png" /><noscript><img src="https://apxconstructiongroup.com/wp-content/uploads/2024/03/esgr-patriot-award.png" alt="esgr-patriot-award" /></noscript>
+                                                    </a>
+                         
+                                    </div>
+
+            </div>
+            <div class="col-lg-9 d-none d-md-block">
+                <div class="row"> 
+                    <ul id="menu-footer-menu-1" class="menu-item col-3 ml-0 ml-lg-4"><li id="menu-item-14329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14329"><a href="https://apxconstructiongroup.com/projects/">Projects</a></li>
+<li id="menu-item-14556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14556"><a href="https://apxconstructiongroup.com/general-contractor-services/">Capabilities</a></li>
+<li id="menu-item-14550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14550"><a href="https://apxconstructiongroup.com/our-developments/">Our Developments</a></li>
+<li id="menu-item-14551" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14551"><a href="https://apxconstructiongroup.com/our-team-apx/">Our Team</a>
+<ul class="sub-menu">
+	<li id="menu-item-14562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14562"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue Blog</a></li>
+	<li id="menu-item-14560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14560"><a href="https://apxconstructiongroup.com/our-community/">Our Community</a></li>
+</ul>
+</li>
+<li id="menu-item-14552" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14552"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue</a>
+<ul class="sub-menu">
+	<li id="menu-item-14558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14558"><a href="https://apxconstructiongroup.com/build-blue-podcast/">Build Blue Podcast</a></li>
+	<li id="menu-item-14559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14559"><a href="https://apxconstructiongroup.com/build-blue-blog/press-room/">Press Room</a></li>
+</ul>
+</li>
+<li id="menu-item-14553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14553"><a href="https://apxconstructiongroup.com/apx-careers/">APX Careers</a></li>
+<li id="menu-item-14554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14554"><a href="https://apxconstructiongroup.com/contact/">Contact Us</a></li>
+</ul>                    <ul id="menu-footer-menu-2" class="menu-item col"><li id="menu-item-14379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14379"><a href="https://apxconstructiongroup.com/general-contractor-services/">Capabilities</a></li>
+</ul>                    <ul id="menu-footer-menu-3" class="menu-item col"><li id="menu-item-11059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11059"><a href="https://apxconstructiongroup.com/our-team-apx/">Our Team</a></li>
+</ul>                    <ul id="menu-footer-menu-4" class="menu-item col"><li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-117"><a href="https://apxconstructiongroup.com/build-blue-blog/">Build Blue</a>
+<ul class="sub-menu">
+	<li id="menu-item-14564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14564"><a href="https://apxconstructiongroup.com/build-blue-blog/">Blog</a></li>
+	<li id="menu-item-14542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14542"><a href="https://apxconstructiongroup.com/build-blue-podcast/">Podcast</a></li>
+	<li id="menu-item-14541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14541"><a href="https://apxconstructiongroup.com/build-blue-blog/press-room/">Press</a></li>
+</ul>
+</li>
+</ul>                    <ul id="menu-footer-menu-5" class="menu-item col"><li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://apxconstructiongroup.com/apx-careers/">APX Careers</a></li>
+</ul>		
+					   <ul id="menu-footer-menu-6" class="menu-item col"><li id="menu-item-13868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13868"><a href="https://apxconstructiongroup.com/contact/">Contact Us</a></li>
+</ul>	
+                </div>
+                <div class="row">
+                    <div class="image-wrapper">
+                        <div class="map-wrap">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="APX Construction Group - Mankato, MN" data-lazy-src="/wp-content/uploads/2022/10/apex-map-01.jpeg"><noscript><img src="/wp-content/uploads/2022/10/apex-map-01.jpeg" alt="APX Construction Group - Mankato, MN"></noscript>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer tail end -->
+<div class="footer-tail">
+    <div id="scroll-top-wrap" class="move-to-top d-none d-md-flex align-items-center justify-content-center">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="arrow-up" data-lazy-src="/wp-content/themes/apx-construction/svg/footer-arrow-up.svg"><noscript><img src="/wp-content/themes/apx-construction/svg/footer-arrow-up.svg" alt="arrow-up"></noscript>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="copyright">APX Construction Group &copy; 2025</div>
+            </div>
+        </div>
+    </div>
+</div>    </footer>
+
+    
+<button id="responsive-menu-pro-button" tabindex="1"
+        class="responsive-menu-pro-button responsive-menu-pro-boring responsive-menu-pro-accessible"
+        type="button"
+        aria-label="Menu">
+    <span class="responsive-menu-pro-box"><span class="responsive-menu-pro-inner"></span>
+    </span></button><div id="responsive-menu-pro-container" class=" slide-right">
+    <div id="responsive-menu-pro-wrapper" role="navigation" aria-label="header-menu"><ul id="responsive-menu-pro" role="menubar" aria-label="" ><li id="responsive-menu-pro-item-14329" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/projects/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Projects</a></li><li id="responsive-menu-pro-item-14556" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/general-contractor-services/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Capabilities</a></li><li id="responsive-menu-pro-item-14550" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/our-developments/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Our Developments</a></li><li id="responsive-menu-pro-item-14551" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children responsive-menu-pro-item responsive-menu-pro-item-has-children" role="none"><a href="https://apxconstructiongroup.com/our-team-apx/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Our Team<div class="responsive-menu-pro-subarrow">▼</div></a><ul aria-label='Our Team' role='menu' data-depth='2' class='responsive-menu-pro-submenu responsive-menu-pro-submenu-depth-1'><li id="responsive-menu-pro-item-14562" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/build-blue-blog/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Build Blue Blog</a></li><li id="responsive-menu-pro-item-14560" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/our-community/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Our Community</a></li></ul></li><li id="responsive-menu-pro-item-14552" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children responsive-menu-pro-item responsive-menu-pro-item-has-children" role="none"><a href="https://apxconstructiongroup.com/build-blue-blog/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Build Blue<div class="responsive-menu-pro-subarrow">▼</div></a><ul aria-label='Build Blue' role='menu' data-depth='2' class='responsive-menu-pro-submenu responsive-menu-pro-submenu-depth-1'><li id="responsive-menu-pro-item-14558" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/build-blue-podcast/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Build Blue Podcast</a></li><li id="responsive-menu-pro-item-14559" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/build-blue-blog/press-room/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Press Room</a></li></ul></li><li id="responsive-menu-pro-item-14553" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/apx-careers/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">APX Careers</a></li><li id="responsive-menu-pro-item-14554" class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-pro-item" role="none"><a href="https://apxconstructiongroup.com/contact/" class="responsive-menu-pro-item-link" tabindex="1" role="menuitem">Contact Us</a></li></ul>    </div>
+</div>    <div class="menu-hamburger"></div>
+    <div class="d-md-none mobile-button-menu-wrap">
+        <div class="d-flex">
+            <div>
+                <a href="/contact" class="button blue-btn">
+                    <span>Contact Us</span>
+                    <span>
+                        <img src="/wp-content/themes/apx-construction/svg/button-arrow.svg" alt="Arrow" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/apx-construction/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style type="text/css"> 
+         /* Hide reCAPTCHA V3 badge */
+        .grecaptcha-badge {
+        
+            visibility: hidden !important;
+        
+        }
+    </style><script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/plugins/pinterest-pin-it-button-on-image-hover-and-post/js/main.js?ver=3d329b1e9f0c69ee23258879e99a1d21" id="wl-pin-main-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wl-pin-main-js-after">window.addEventListener('DOMContentLoaded', function() {
+/* <![CDATA[ */
+jQuery(document).ready(function(){jQuery(".is-cropped img").each(function(){jQuery(this).attr("style", "min-height: 120px;min-width: 100px;");});jQuery(".avatar").attr("style", "min-width: unset; min-height: unset;");});
+//# sourceURL=wl-pin-main-js-after
+/* ]]> */
+});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://apxconstructiongroup.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="heateor_sss_sharing_js-js-before">
+/* <![CDATA[ */
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://apxconstructiongroup.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://apxconstructiongroup.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://apxconstructiongroup.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+//# sourceURL=heateor_sss_sharing_js-js-before
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://apxconstructiongroup.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.79" id="heateor_sss_sharing_js-js" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://apxconstructiongroup.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=["\/wp-content\/themes\/apx-construction\/style.css"];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+    <script type="text/javascript">
+        _linkedin_partner_id = "2965514";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+        (function(l) {
+            if (!l) {
+                window.lintrk = function(a, b) {
+                    window.lintrk.q.push([a, b]);
+                };
+                window.lintrk.q = [];
+            }
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";
+            b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })(window.lintrk);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2965514&fmt=gif" />
+    </noscript>
+    </body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

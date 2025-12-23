@@ -118,6 +118,48 @@ const industries = [
       "Seasonal deep cleaning programs",
     ],
   },
+  {
+    icon: Warehouse,
+    title: "Warehouses",
+    description: "Specialized cleaning services for warehouse facilities. Interior floor cleaning, dust control, and maintenance for large storage and distribution spaces.",
+    services: [
+      "Interior warehouse floor cleaning",
+      "Dust control and management",
+      "Loading dock maintenance",
+      "High-ceiling area cleaning",
+      "Regular scheduled service",
+    ],
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
+    imageAlt: "Interior warehouse facility",
+  },
+  {
+    icon: Factory,
+    title: "Industrial Plant",
+    description: "Professional cleaning services for industrial plants and manufacturing facilities. Exterior maintenance and specialized industrial cleaning solutions.",
+    services: [
+      "Exterior building cleaning",
+      "Industrial facility maintenance",
+      "Production area cleaning",
+      "Equipment area maintenance",
+      "Scheduled maintenance programs",
+    ],
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    imageAlt: "Industrial plant exterior",
+  },
+  {
+    icon: Building2,
+    title: "Multi-Tenant Building",
+    description: "Comprehensive cleaning services for multi-tenant commercial buildings. Common areas, lobbies, and shared spaces maintained to the highest standards.",
+    services: [
+      "Lobby and common area cleaning",
+      "Shared restroom maintenance",
+      "Elevator and hallway cleaning",
+      "Exterior building maintenance",
+      "Regular scheduled service",
+    ],
+    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
+    imageAlt: "Multi-tenant commercial building exterior",
+  },
 ];
 
 export default function Industries() {

@@ -50,8 +50,17 @@ export default function About() {
       <Header />
       <main className="pt-24 pb-24">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-gradient-hero relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '300px 300px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <ScrollReveal direction="left">
                 <div>
@@ -59,12 +68,12 @@ export default function About() {
                     About Us
                   </span>
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                    Your Commercial Removal Partner
+                    Your Commercial Cleaning Partner
                   </h1>
                   <p className="text-xl text-muted-foreground mb-8">
                     For over 15 years, Remove It Services has been the trusted choice for 
-                    commercial junk removal across the state. We understand business, and 
-                    we deliver results.
+                    commercial cleaning across the state. We understand business, and 
+                    we deliver spotless results.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button variant="cta" size="lg" asChild>
@@ -108,8 +117,17 @@ export default function About() {
         </section>
 
         {/* Mission Section */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-background relative">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '400px 400px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <ScrollReveal direction="left">
                 <div>
@@ -117,17 +135,17 @@ export default function About() {
                     Our Mission
                   </h2>
                   <p className="text-lg text-muted-foreground mb-6">
-                    To provide commercial clients with fast, reliable, and professional junk 
-                    removal services that minimize business disruption and maximize value.
+                    To provide commercial clients with fast, reliable, and professional cleaning 
+                    services that minimize business disruption and maximize cleanliness standards.
                   </p>
                   <p className="text-lg text-muted-foreground mb-6">
-                    We believe every business deserves a clean, efficient workspace. That's why 
+                    We believe every business deserves a clean, professional environment. That's why 
                     we've built our company around flexibility, professionalism, and results that 
                     speak for themselves.
                   </p>
                   <p className="text-lg text-muted-foreground">
-                    From small office cleanouts to large-scale commercial projects, we approach 
-                    every job with the same commitment to excellence.
+                    From restaurant kitchens to office buildings, we approach 
+                    every job with the same commitment to excellence and spotless results.
                   </p>
                 </div>
               </ScrollReveal>
@@ -152,8 +170,17 @@ export default function About() {
         </section>
 
         {/* Values Section */}
-        <section className="py-16 bg-muted/50">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-muted/50 relative">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '400px 400px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -197,7 +224,7 @@ export default function About() {
               </h2>
               <p className="text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
                 Experience the Remove It Services difference. Get a free quote today 
-                and see why businesses across the state trust us with their removal needs.
+                and see why businesses across the state trust us with their cleaning needs.
               </p>
               <Button variant="cta" size="xl" asChild>
                 <Link to="/contact">

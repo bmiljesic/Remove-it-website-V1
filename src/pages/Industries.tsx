@@ -11,6 +11,7 @@ import {
   Factory,
   Briefcase,
   Building2,
+  UtensilsCrossed,
   ArrowRight,
   CheckCircle,
   Phone
@@ -19,13 +20,24 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ani
 
 const industries = [
   {
+    icon: UtensilsCrossed,
+    title: "Restaurants & Food Service",
+    description: "Specialized cleaning services for restaurant chains and food service facilities. Kitchen floors, common areas, and touchless restroom disinfecting.",
+    services: [
+      "Kitchen floor deep cleaning",
+      "Common area floor maintenance",
+      "Touchless restroom disinfecting",
+      "Multi-location restaurant chain support",
+    ],
+  },
+  {
     icon: Building2,
     title: "Corporate Offices",
-    description: "From Fortune 500 companies to growing startups, we provide reliable office junk removal that respects your workspace and schedule.",
+    description: "Professional cleaning services for offices of all sizes. Daily maintenance, deep cleaning, and flexible scheduling to minimize disruption.",
     services: [
-      "Office furniture removal",
-      "Electronics and equipment disposal",
-      "Cubicle and partition removal",
+      "Daily and weekly office cleaning",
+      "Floor care and vacuuming",
+      "Restroom and break room maintenance",
       "After-hours service available",
     ],
   },
@@ -43,45 +55,45 @@ const industries = [
   {
     icon: Store,
     title: "Retail & Franchise",
-    description: "Efficient removal of store fixtures, displays, and inventory for retail chains and franchise operations.",
+    description: "Professional cleaning services for retail chains and franchise operations. Floor maintenance, restroom sanitation, and storefront cleaning.",
     services: [
-      "Store fixture removal",
-      "Display and signage disposal",
-      "Inventory liquidation support",
+      "Storefront cleaning",
+      "Floor maintenance and care",
+      "Restroom sanitation",
       "Multi-location services",
     ],
   },
   {
     icon: Warehouse,
     title: "Warehouses & Distribution",
-    description: "Large-scale cleanout services for warehouses, distribution centers, and industrial storage facilities.",
+    description: "Comprehensive cleaning services for warehouses, distribution centers, and industrial storage facilities.",
     services: [
-      "Pallet and rack removal",
-      "Bulk inventory disposal",
-      "Equipment relocation support",
-      "Complete facility cleanouts",
+      "Industrial floor cleaning",
+      "Dust control and management",
+      "Loading dock maintenance",
+      "Regular scheduled service",
     ],
   },
   {
     icon: Home,
     title: "Property Management",
-    description: "Reliable partner for property managers handling tenant turnovers, estate clearing, and ongoing maintenance.",
+    description: "Reliable partner for property managers handling tenant turnovers, common area maintenance, and ongoing cleaning services.",
     services: [
-      "Tenant turnover cleanouts",
-      "Estate and eviction clearing",
+      "Tenant turnover cleaning",
       "Common area maintenance",
+      "Restroom and lobby cleaning",
       "Ongoing service contracts",
     ],
   },
   {
     icon: Factory,
     title: "Industrial & Manufacturing",
-    description: "Heavy-duty removal services for manufacturing facilities, including machinery, equipment, and industrial waste.",
+    description: "Heavy-duty cleaning services for manufacturing facilities, including floor care, dust control, and facility maintenance.",
     services: [
-      "Heavy equipment removal",
-      "Industrial waste disposal",
-      "Factory cleanouts",
-      "Plant decommissioning",
+      "Industrial floor cleaning",
+      "Dust control and management",
+      "Production area cleaning",
+      "Facility maintenance programs",
     ],
   },
   {
@@ -98,12 +110,12 @@ const industries = [
   {
     icon: Building,
     title: "Facility Management",
-    description: "Comprehensive junk removal services for facility managers maintaining commercial properties.",
+    description: "Comprehensive cleaning services for facility managers maintaining commercial properties.",
     services: [
-      "Regular scheduled pickups",
-      "Emergency cleanout service",
-      "Common area cleaning",
-      "Seasonal cleanout programs",
+      "Regular scheduled cleaning",
+      "Emergency cleaning service",
+      "Common area maintenance",
+      "Seasonal deep cleaning programs",
     ],
   },
 ];
@@ -114,18 +126,27 @@ export default function Industries() {
       <Header />
       <main className="pt-24 pb-24">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-gradient-hero relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '300px 300px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <ScrollReveal>
               <div className="max-w-3xl">
                 <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
                   Industries We Serve
                 </span>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                  Commercial Removal Experts
+                  Commercial Cleaning Experts
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
-                  We understand the unique needs of different industries. Our specialized 
+                  We understand the unique cleaning needs of different industries. Our specialized 
                   services are designed to meet your specific operational requirements.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -145,8 +166,17 @@ export default function Industries() {
         </section>
 
         {/* Industries Grid */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-background relative">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '400px 400px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <StaggerContainer 
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
               staggerDelay={0.1}
@@ -193,7 +223,7 @@ export default function Industries() {
               </h2>
               <p className="text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
                 We work with businesses across all sectors. Contact us to discuss your 
-                specific commercial removal needs.
+                specific commercial cleaning needs.
               </p>
               <Button variant="cta" size="xl" asChild>
                 <Link to="/contact">

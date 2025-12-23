@@ -7,13 +7,14 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ani
 import { useToast } from "@/hooks/use-toast";
 
 const serviceOptions = [
-  "Commercial Junk Removal",
-  "Office Cleanout",
-  "Construction Debris",
-  "Warehouse Cleanout",
-  "Property Management",
-  "Equipment Removal",
-  "Same-Day Service",
+  "Restaurant Cleaning",
+  "Kitchen Floor Cleaning",
+  "Touchless Restroom Disinfecting",
+  "Office Cleaning",
+  "Deep Cleaning",
+  "Facility Maintenance",
+  "Post-Construction Cleaning",
+  "Scheduled Janitorial",
   "Other",
 ];
 
@@ -97,8 +98,17 @@ export default function Contact() {
       <Header />
       <main className="pt-24 pb-24">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-gradient-hero relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '300px 300px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <ScrollReveal>
               <div className="max-w-3xl">
                 <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
@@ -109,7 +119,7 @@ export default function Contact() {
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Fill out the form below and we'll get back to you within 2 hours with 
-                  a no-obligation estimate for your removal project.
+                  a no-obligation estimate for your cleaning project.
                 </p>
               </div>
             </ScrollReveal>
@@ -144,8 +154,17 @@ export default function Contact() {
         </section>
 
         {/* Form Section */}
-        <section id="form" className="py-16 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section id="form" className="py-16 bg-background relative">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '400px 400px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="grid lg:grid-cols-2 gap-16">
               {/* Form */}
               <ScrollReveal direction="left">
@@ -251,7 +270,7 @@ export default function Contact() {
                         value={formData.message}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-none"
-                        placeholder="Tell us about your removal needs, timeline, and any special requirements..."
+                        placeholder="Tell us about your cleaning needs, timeline, and any special requirements..."
                       />
                     </div>
 

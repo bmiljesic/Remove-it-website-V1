@@ -1,33 +1,92 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Shield, Clock, Sparkles } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"]
+  });
+
+  // Parallax transforms
+  const logoY = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const circle1Y = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const circle2Y = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const gridY = useTransform(scrollYProgress, [0, 1], [0, 50]);
+
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-hero">
+    <section ref={sectionRef} className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-hero">
+      {/* Animated Gradient Overlay */}
+      <motion.div
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        animate={{
+          background: [
+            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, hsl(222 47% 11% / 0.05) 100%)",
+            "linear-gradient(135deg, hsl(192 91% 36% / 0.15) 0%, hsl(187 96% 42% / 0.1) 100%)",
+            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, hsl(222 47% 11% / 0.05) 100%)",
+          ],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Logo Watermark Background with Parallax */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.03 }}
+          transition={{ duration: 1.5 }}
+          style={{
+            y: logoY,
+            backgroundImage: `url('/logo.png')`,
+            backgroundRepeat: 'repeat',
+            backgroundSize: '400px 400px',
+            backgroundPosition: 'center',
+          }}
+          className="absolute inset-0"
+        />
+        
+        {/* Pattern Overlay - Geometric shapes */}
+        <motion.div
+          style={{ y: gridY }}
+          className="absolute inset-0 opacity-[0.03]"
+        >
+          <div 
+            className="w-full h-full"
+            style={{
+              backgroundImage: `
+                linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
+                linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px),
+                radial-gradient(circle at 20% 30%, hsl(var(--accent)) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, hsl(var(--primary)) 0%, transparent 50%)
+              `,
+              backgroundSize: "60px 60px, 60px 60px, 300px 300px, 400px 400px",
+              backgroundPosition: "0 0, 0 0, 0 0, 100% 100%",
+            }}
+          />
+        </motion.div>
+
+        {/* Animated Circles with Parallax */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.05, scale: 1 }}
           transition={{ duration: 1.5 }}
+          style={{ y: circle1Y }}
           className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-accent"
         />
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.03, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.3 }}
+          style={{ y: circle2Y }}
           className="absolute -bottom-60 -left-40 w-[500px] h-[500px] rounded-full bg-primary"
-        />
-        {/* Grid Pattern */}
-        <div 
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-                             linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
-          }}
         />
       </div>
 
@@ -62,8 +121,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
-            Professional cleaning solutions for offices, facilities, and commercial properties. 
-            Reliable service. Spotless results. Junk removal available.
+            Professional cleaning solutions for restaurants, offices, and commercial facilities. 
+            Touchless disinfecting. Spotless restrooms. Reliable service.
           </motion.p>
 
           {/* CTAs */}

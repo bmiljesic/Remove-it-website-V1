@@ -27,8 +27,17 @@ const regions = [
 
 export function ServiceAreasPreview() {
   return (
-    <section className="py-24 bg-muted/50">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 bg-muted/50 relative overflow-hidden">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+        style={{
+          backgroundImage: `url('/logo.png')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '350px 350px',
+          backgroundPosition: 'center',
+        }}
+      />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Content */}
           <div className="text-center">
@@ -40,7 +49,7 @@ export function ServiceAreasPreview() {
                 Serving Businesses Across the Region
               </h2>
               <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-                We provide reliable junk removal services across Delaware County Pennsylvania, 
+                We provide reliable commercial cleaning services across Delaware County Pennsylvania, 
                 Delaware (the state), Cecil County Maryland, and Harford County Maryland.
               </p>
             </ScrollReveal>

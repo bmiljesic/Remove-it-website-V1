@@ -3,19 +3,18 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from "
 import { Button } from "@/components/ui/button";
 
 const services = [
+  { label: "Restaurant Cleaning", href: "/services#restaurant" },
   { label: "Office Cleaning", href: "/services#office" },
   { label: "Deep Cleaning", href: "/services#deep-cleaning" },
   { label: "Facility Maintenance", href: "/services#facility" },
   { label: "Post-Construction Cleaning", href: "/services#post-construction" },
   { label: "Janitorial Services", href: "/services#janitorial" },
-  { label: "Junk Removal", href: "/services#junk-removal" },
 ];
 
 const company = [
   { label: "About Us", href: "/about" },
   { label: "Industries Served", href: "/industries" },
   { label: "Service Areas", href: "/service-areas" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -70,19 +70,28 @@ export default function ServiceAreas() {
       <Header />
       <main className="pt-24 pb-24">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-gradient-hero relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '300px 300px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <ScrollReveal>
               <div className="max-w-3xl">
                 <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
                   Service Areas
                 </span>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                  Commercial Junk Removal Services
+                  Commercial Cleaning Services
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8">
                   Serving Delaware County Pennsylvania, Delaware (the state), Cecil County Maryland, 
-                  and Harford County Maryland with reliable junk removal services for your business.
+                  and Harford County Maryland with reliable commercial cleaning services for your business.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="cta" size="lg" asChild>
@@ -127,8 +136,17 @@ export default function ServiceAreas() {
         </section>
 
         {/* Regions Grid */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="py-16 bg-background relative">
+          {/* Subtle background pattern */}
+          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: `url('/logo.png')`,
+              backgroundRepeat: 'repeat',
+              backgroundSize: '400px 400px',
+              backgroundPosition: 'center',
+            }}
+          />
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">

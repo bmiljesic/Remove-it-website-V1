@@ -12,8 +12,17 @@ const benefits = [
 
 export function FinalCTA() {
   return (
-    <section className="py-24 bg-gradient-hero overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 bg-gradient-hero overflow-hidden relative">
+      {/* Logo background pattern */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: `url('/logo.png')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '300px 300px',
+          backgroundPosition: 'center',
+        }}
+      />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="relative">
           {/* Background Elements */}
           <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-accent/5 blur-3xl" />

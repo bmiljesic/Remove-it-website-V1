@@ -1,7 +1,5 @@
 import { Clock, DollarSign, Shield, Truck, Users, Recycle } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem, AnimatedCounter } from "@/components/ui/animations";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 const features = [
   {
@@ -44,56 +42,11 @@ const stats = [
 ];
 
 export function WhyChooseUs() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"]
-  });
-
-  const patternY = useTransform(scrollYProgress, [0, 1], [0, -40]);
-  const gradientOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.1, 0.18, 0.1]);
-
   return (
-    <section ref={sectionRef} className="py-24 bg-background relative overflow-hidden">
-      {/* Animated Gradient Overlay */}
-      <motion.div
-        style={{ opacity: gradientOpacity }}
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          background: [
-            "linear-gradient(180deg, hsl(187 96% 42% / 0.08) 0%, transparent 50%)",
-            "linear-gradient(180deg, hsl(192 91% 36% / 0.12) 0%, transparent 50%)",
-            "linear-gradient(180deg, hsl(187 96% 42% / 0.08) 0%, transparent 50%)",
-          ],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* Pattern Overlay */}
-      <motion.div
-        style={{ y: patternY }}
-        className="absolute inset-0 opacity-[0.02] pointer-events-none"
-      >
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              url('/logo.png'),
-              linear-gradient(60deg, hsl(var(--foreground)) 1px, transparent 1px),
-              linear-gradient(-60deg, hsl(var(--foreground)) 1px, transparent 1px)
-            `,
-            backgroundRepeat: 'repeat, repeat, repeat',
-            backgroundSize: '350px 350px, 45px 45px, 45px 45px',
-            backgroundPosition: 'center, 0 0, 0 0',
-            mixBlendMode: 'multiply',
-          }}
-        />
-      </motion.div>
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+    <section className="py-24 relative">
+      {/* Subtle section divider */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
+      <div className="container mx-auto px-4 lg:px-8">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">

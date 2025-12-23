@@ -14,7 +14,7 @@ export function FinalCTA() {
   return (
     <section className="py-24 bg-gradient-hero overflow-hidden relative">
       {/* Logo background pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+      <div className="absolute inset-0 opacity-[0.1] pointer-events-none"
         style={{
           backgroundImage: `url('/logo.png')`,
           backgroundRepeat: 'repeat',

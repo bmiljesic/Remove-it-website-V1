@@ -24,16 +24,8 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="py-24 bg-primary text-primary-foreground overflow-hidden relative">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `url('/logo.png')`,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '350px 350px',
-          backgroundPosition: 'center',
-        }}
-      />
+    <section className="py-24 text-primary-foreground overflow-hidden relative">
+      {/* Pattern is now from parent wrapper - no local pattern needed */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-16">

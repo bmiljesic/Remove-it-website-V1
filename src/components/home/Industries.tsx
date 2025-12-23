@@ -50,17 +50,10 @@ const industries = [
 
 export function Industries() {
   return (
-    <section className="py-24 bg-muted/50 relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
-        style={{
-          backgroundImage: `url('/logo.png')`,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '350px 350px',
-          backgroundPosition: 'center',
-        }}
-      />
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+    <section className="py-24 relative">
+      {/* Subtle section divider */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <ScrollReveal direction="left">

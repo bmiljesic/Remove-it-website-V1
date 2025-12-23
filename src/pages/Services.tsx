@@ -16,8 +16,6 @@ import {
   Square
 } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/animations";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 const services = [
   {
@@ -183,7 +181,7 @@ function ServiceImageWithPattern({ image, alt }: { image: string; alt: string })
   });
 
   const imageY = useTransform(scrollYProgress, [0, 1], [0, 30]);
-  const patternOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.15, 0.25, 0.15]);
+  const patternOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.25, 0.4, 0.25]);
 
   return (
     <motion.div
@@ -202,9 +200,9 @@ function ServiceImageWithPattern({ image, alt }: { image: string; alt: string })
         className="absolute inset-0"
         animate={{
           background: [
-            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, transparent 60%)",
-            "linear-gradient(225deg, hsl(192 91% 36% / 0.15) 0%, transparent 60%)",
-            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, transparent 60%)",
+            "linear-gradient(135deg, hsl(187 96% 42% / 0.25) 0%, transparent 60%)",
+            "linear-gradient(225deg, hsl(192 91% 36% / 0.3) 0%, transparent 60%)",
+            "linear-gradient(135deg, hsl(187 96% 42% / 0.25) 0%, transparent 60%)",
           ],
         }}
         transition={{
@@ -238,80 +236,34 @@ function ServiceImageWithPattern({ image, alt }: { image: string; alt: string })
   );
 }
 
-function ServicesBackground() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"]
-  });
-
-  const patternY = useTransform(scrollYProgress, [0, 1], [0, -80]);
-  const gradientOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.08, 0.15, 0.08]);
-
-  return (
-    <>
-      {/* Animated Gradient Overlay */}
-      <motion.div
-        ref={sectionRef as any}
-        style={{ opacity: gradientOpacity }}
-        className="absolute inset-0 pointer-events-none"
-        animate={{
-          background: [
-            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, hsl(222 47% 11% / 0.05) 100%)",
-            "linear-gradient(225deg, hsl(192 91% 36% / 0.12) 0%, hsl(187 96% 42% / 0.08) 100%)",
-            "linear-gradient(135deg, hsl(187 96% 42% / 0.1) 0%, hsl(222 47% 11% / 0.05) 100%)",
-          ],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* Pattern Overlay with Logo and Geometric Patterns */}
-      <motion.div
-        style={{ y: patternY }}
-        className="absolute inset-0 opacity-[0.025] pointer-events-none"
-      >
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `
-              url('/logo.png'),
-              linear-gradient(30deg, hsl(var(--foreground)) 1px, transparent 1px),
-              linear-gradient(-30deg, hsl(var(--foreground)) 1px, transparent 1px),
-              radial-gradient(ellipse at 20% 40%, hsl(var(--accent)) 0%, transparent 50%),
-              radial-gradient(ellipse at 80% 60%, hsl(var(--primary)) 0%, transparent 50%)
-            `,
-            backgroundRepeat: 'repeat, repeat, repeat, no-repeat, no-repeat',
-            backgroundSize: '400px 400px, 50px 50px, 50px 50px, 600px 400px, 500px 300px',
-            backgroundPosition: 'center, 0 0, 0 0, 10% 20%, 90% 80%',
-            mixBlendMode: 'multiply',
-          }}
-        />
-      </motion.div>
-    </>
-  );
-}
 
 export default function Services() {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-24">
-        {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+      <main>
+        {/* Continuous Background Wrapper */}
+        <div className="relative bg-background pt-24 pb-24">
+          {/* Single continuous background pattern */}
+          <div className="absolute inset-0 opacity-[0.08] pointer-events-none"
             style={{
-              backgroundImage: `url('/logo.png')`,
-              backgroundRepeat: 'repeat',
-              backgroundSize: '300px 300px',
-              backgroundPosition: 'center',
+              backgroundImage: `
+                url('/logo.png'),
+                linear-gradient(45deg, hsl(var(--foreground)) 1px, transparent 1px),
+                linear-gradient(-45deg, hsl(var(--foreground)) 1px, transparent 1px)
+              `,
+              backgroundRepeat: 'repeat, repeat, repeat',
+              backgroundSize: '350px 350px, 40px 40px, 40px 40px',
+              backgroundPosition: 'center, 0 0, 0 0',
+              mixBlendMode: 'multiply',
             }}
           />
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          
+          {/* All sections with transparent backgrounds */}
+          <div className="relative z-10">
+            {/* Hero Section */}
+            <section className="py-16 relative">
+              <div className="container mx-auto px-4 lg:px-8">
             <ScrollReveal>
               <div className="max-w-3xl">
                 <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
@@ -337,13 +289,14 @@ export default function Services() {
                 </div>
               </div>
             </ScrollReveal>
-          </div>
-        </section>
+              </div>
+            </section>
 
-        {/* Services Grid */}
-        <section className="py-16 bg-background relative overflow-hidden">
-          <ServicesBackground />
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
+            {/* Services Grid */}
+            <section className="py-16 relative overflow-hidden">
+              {/* Subtle section divider */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
+              <div className="container mx-auto px-4 lg:px-8">
             <StaggerContainer className="space-y-16" staggerDelay={0.1}>
               {services.map((service, index) => (
                 <StaggerItem key={service.id}>
@@ -399,8 +352,10 @@ export default function Services() {
                 </StaggerItem>
               ))}
             </StaggerContainer>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </>

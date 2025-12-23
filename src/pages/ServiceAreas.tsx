@@ -68,19 +68,29 @@ export default function ServiceAreas() {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-24">
-        {/* Hero Section */}
-        <section className="py-16 bg-gradient-hero relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+      <main>
+        {/* Continuous Background Wrapper */}
+        <div className="relative bg-background pt-24 pb-24">
+          {/* Single continuous background pattern */}
+          <div className="absolute inset-0 opacity-[0.08] pointer-events-none"
             style={{
-              backgroundImage: `url('/logo.png')`,
-              backgroundRepeat: 'repeat',
-              backgroundSize: '300px 300px',
-              backgroundPosition: 'center',
+              backgroundImage: `
+                url('/logo.png'),
+                linear-gradient(45deg, hsl(var(--foreground)) 1px, transparent 1px),
+                linear-gradient(-45deg, hsl(var(--foreground)) 1px, transparent 1px)
+              `,
+              backgroundRepeat: 'repeat, repeat, repeat',
+              backgroundSize: '350px 350px, 40px 40px, 40px 40px',
+              backgroundPosition: 'center, 0 0, 0 0',
+              mixBlendMode: 'multiply',
             }}
           />
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          
+          {/* All sections with transparent backgrounds */}
+          <div className="relative z-10">
+            {/* Hero Section */}
+            <section className="py-16 relative">
+              <div className="container mx-auto px-4 lg:px-8">
             <ScrollReveal>
               <div className="max-w-3xl">
                 <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
@@ -105,48 +115,43 @@ export default function ServiceAreas() {
                   </Button>
                 </div>
               </div>
-            </ScrollReveal>
-          </div>
-        </section>
+              </ScrollReveal>
+              </div>
+            </section>
 
-        {/* Coverage Info */}
-        <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <ScrollReveal delay={0}>
-                <div>
-                  <div className="text-4xl font-bold mb-2">4</div>
-                  <div className="text-primary-foreground/70">Service Areas</div>
+            {/* Coverage Info - dark overlay */}
+            <section className="py-16 text-primary-foreground relative">
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-primary pointer-events-none z-20" />
+              <div className="container mx-auto px-4 lg:px-8 relative z-30">
+                <div className="grid md:grid-cols-3 gap-8 text-center">
+                  <ScrollReveal delay={0}>
+                    <div>
+                      <div className="text-4xl font-bold mb-2">4</div>
+                      <div className="text-primary-foreground/70">Service Areas</div>
+                    </div>
+                  </ScrollReveal>
+                  <ScrollReveal delay={0.1}>
+                    <div>
+                      <div className="text-4xl font-bold mb-2">30+</div>
+                      <div className="text-primary-foreground/70">Cities & Towns</div>
+                    </div>
+                  </ScrollReveal>
+                  <ScrollReveal delay={0.2}>
+                    <div>
+                      <div className="text-4xl font-bold mb-2">2</div>
+                      <div className="text-primary-foreground/70">States Covered</div>
+                    </div>
+                  </ScrollReveal>
                 </div>
-              </ScrollReveal>
-              <ScrollReveal delay={0.1}>
-                <div>
-                  <div className="text-4xl font-bold mb-2">30+</div>
-                  <div className="text-primary-foreground/70">Cities & Towns</div>
-                </div>
-              </ScrollReveal>
-              <ScrollReveal delay={0.2}>
-                <div>
-                  <div className="text-4xl font-bold mb-2">2</div>
-                  <div className="text-primary-foreground/70">States Covered</div>
-                </div>
-              </ScrollReveal>
-            </div>
-          </div>
-        </section>
+              </div>
+            </section>
 
-        {/* Regions Grid */}
-        <section className="py-16 bg-background relative">
-          {/* Subtle background pattern */}
-          <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
-            style={{
-              backgroundImage: `url('/logo.png')`,
-              backgroundRepeat: 'repeat',
-              backgroundSize: '400px 400px',
-              backgroundPosition: 'center',
-            }}
-          />
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
+            {/* Regions Grid */}
+            <section className="py-16 relative">
+              {/* Subtle section divider */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
+              <div className="container mx-auto px-4 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -187,12 +192,14 @@ export default function ServiceAreas() {
                 </StaggerItem>
               ))}
             </StaggerContainer>
-          </div>
-        </section>
+              </div>
+            </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-muted/50">
-          <div className="container mx-auto px-4 lg:px-8 text-center">
+            {/* CTA Section */}
+            <section className="py-16 relative">
+              {/* Subtle section divider */}
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
+              <div className="container mx-auto px-4 lg:px-8 text-center">
             <ScrollReveal>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Don't See Your Area?
@@ -208,8 +215,10 @@ export default function ServiceAreas() {
                 </Link>
               </Button>
             </ScrollReveal>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </>
